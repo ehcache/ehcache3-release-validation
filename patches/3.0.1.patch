@@ -1,0 +1,35 @@
+diff --git a/build.gradle b/build.gradle
+index eb0cd4f04..ea1ec687d 100644
+--- a/build.gradle
++++ b/build.gradle
+@@ -52,7 +52,7 @@ subprojects {
+ 
+   repositories {
+     mavenCentral()
+-    maven { url "http://repo.terracotta.org/maven2" }
++    maven { url "https://repo.terracotta.org/maven2" }
+   }
+ 
+   sourceSets {
+diff --git a/clustered/build.gradle b/clustered/build.gradle
+index cca87d101..1aaeb80dc 100644
+--- a/clustered/build.gradle
++++ b/clustered/build.gradle
+@@ -23,6 +23,6 @@ ext {
+ 
+ subprojects {
+   repositories {
+-    maven { url "http://snapshots.terracotta.org/" }
++    maven { url "https://snapshots.terracotta.org/" }
+   }
+ }
+diff --git a/settings.gradle b/settings.gradle
+index 49ed9058d..bc83c0977 100644
+--- a/settings.gradle
++++ b/settings.gradle
+@@ -15,5 +15,4 @@
+  */
+ 
+ include "api", "spi-tester", "core", "core-spi-test", "impl", "management", "transactions", "107", "xml",
+-        "clustered", "clustered:common", "clustered:client", "clustered:server", "clustered:integration-test", "clustered:dist", "clustered:ops-tool",
+         "integration-test", "dist", "osgi-test", "demos", "demos:00-NoCache", "demos:01-CacheAside", "docs"

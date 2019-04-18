@@ -1,0 +1,15 @@
+apply plugin: 'java'
+
+repositories {
+  mavenCentral()
+}
+
+dependencies {
+  runtime "${project.property('dependency')}"
+}
+
+task fetch(type: Copy) {
+  from sourceSets.main.runtimeClasspath
+  into "$project.buildDir/runtime/"
+}
+fetch.finalizedBy(clean)

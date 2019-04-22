@@ -1,0 +1,25 @@
+diff --git a/META-INF/MANIFEST.MF b/META-INF/MANIFEST.MF
+index 2ec1273..0f978e8 100644
+--- a/META-INF/MANIFEST.MF
++++ b/META-INF/MANIFEST.MF
+@@ -2,7 +2,7 @@
+ Implementation-Title: ehcache-management
+ Implementation-Version: 3.7.1 7db6abb761a35015a750b7477e865482e97e24fb
+ provider: gradle
+-Built-By: cdennis
+-Build-Time: 2019-04-22T09:55:59-0400
+-Built-JDK: 1.8.0_191
++Built-By: jenkins-slave
++Build-Time: 2019-04-10T19:38:58-0700
++Built-JDK: 1.8.0_202
+ 
+diff --git a/META-INF/maven/org.ehcache.modules/ehcache-management/pom.properties b/META-INF/maven/org.ehcache.modules/ehcache-management/pom.properties
+index b6d43cb..4d0d761 100644
+--- a/META-INF/maven/org.ehcache.modules/ehcache-management/pom.properties
++++ b/META-INF/maven/org.ehcache.modules/ehcache-management/pom.properties
+@@ -1,4 +1,4 @@
+-#Mon Apr 22 09:56:33 EDT 2019
++#Wed Apr 10 19:42:21 PDT 2019
+ version=3.7.1
+ groupId=org.ehcache.modules
+ artifactId=ehcache-management

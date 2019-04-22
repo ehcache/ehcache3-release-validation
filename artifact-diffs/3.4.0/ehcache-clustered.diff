@@ -1,0 +1,66 @@
+diff --git a/META-INF/MANIFEST.MF b/META-INF/MANIFEST.MF
+index 7ea4d01..c19a921 100644
+--- a/META-INF/MANIFEST.MF
++++ b/META-INF/MANIFEST.MF
+@@ -4,10 +4,10 @@
+  nt with the JSR-107 standard.
+ Bundle-License: LICENSE
+ Bundle-SymbolicName: org.ehcache.ehcache-clustered
+-Implementation-Version: 3.4.0 8291e23f4ee305baa4695e1680d0325aa5569fb8
+-Built-By: cdennis
++Implementation-Version: 3.4.0 45a1f99e0d65f13bdd379e60a5ca9a7b6d3a90bc
++Built-By: jenkins-slave
+ Bundle-ManifestVersion: 2
+-Bnd-LastModified: 1555940209000
++Bnd-LastModified: 1503928416000
+ Bundle-RequiredExecutionEnvironment: JavaSE-1.6
+ Bundle-DocURL: http://ehcache.org
+ Bundle-Vendor: Terracotta Inc., a wholly-owned subsidiary of Software 
+@@ -25,7 +25,7 @@
+  ice,org.ehcache.xml,org.ehcache.xml.exceptions,org.ehcache.xml.model,
+  org.slf4j;version="[1.7,2)",org.w3c.dom
+ Require-Capability: osgi.ee;filter:="(&(osgi.ee=JavaSE)(version=1.6))"
+-Built-JDK: 1.8.0_191
++Built-JDK: 1.8.0_131
+ Tool: Bnd-3.2.0.201605172007
+ Export-Package: org.ehcache.clustered.client.config;uses:="org.ehcache
+  ,org.ehcache.clustered.client.service,org.ehcache.clustered.common,or
+@@ -80,6 +80,6 @@
+  nel.decoding,org.terracotta.runnel.decoding.fields,org.terracotta.run
+  nel.encoding,org.terracotta.runnel.encoding.dataholders,org.terracott
+  a.runnel.metadata,org.terracotta.runnel.utils
+-Build-Time: 2019-04-22T09:36:49-0400
+-Created-By: 1.8.0_191 (Oracle Corporation)
++Build-Time: 2017-08-28T06:53:36-0700
++Created-By: 1.8.0_131 (Oracle Corporation)
+ 
+diff --git a/META-INF/maven/org.ehcache.modules/ehcache-client/pom.properties b/META-INF/maven/org.ehcache.modules/ehcache-client/pom.properties
+index 755ec1e..b9ff85c 100644
+--- a/META-INF/maven/org.ehcache.modules/ehcache-client/pom.properties
++++ b/META-INF/maven/org.ehcache.modules/ehcache-client/pom.properties
+@@ -1,4 +1,4 @@
+-#Mon Apr 22 09:36:20 EDT 2019
++#Mon Aug 28 06:44:53 PDT 2017
+ version=3.4.0
+ groupId=org.ehcache.modules
+ artifactId=ehcache-client
+diff --git a/META-INF/maven/org.ehcache.modules/ehcache-common/pom.properties b/META-INF/maven/org.ehcache.modules/ehcache-common/pom.properties
+index bc4d064..e95145e 100644
+--- a/META-INF/maven/org.ehcache.modules/ehcache-common/pom.properties
++++ b/META-INF/maven/org.ehcache.modules/ehcache-common/pom.properties
+@@ -1,4 +1,4 @@
+-#Mon Apr 22 09:36:25 EDT 2019
++#Mon Aug 28 06:44:51 PDT 2017
+ version=3.4.0
+ groupId=org.ehcache.modules
+ artifactId=ehcache-common
+diff --git a/META-INF/maven/org.ehcache/ehcache-clustered/pom.properties b/META-INF/maven/org.ehcache/ehcache-clustered/pom.properties
+index 2796cfc..12bfc9a 100644
+--- a/META-INF/maven/org.ehcache/ehcache-clustered/pom.properties
++++ b/META-INF/maven/org.ehcache/ehcache-clustered/pom.properties
+@@ -1,4 +1,4 @@
+-#Mon Apr 22 09:36:20 EDT 2019
++#Mon Aug 28 06:53:35 PDT 2017
+ version=3.4.0
+ groupId=org.ehcache
+ artifactId=ehcache-clustered

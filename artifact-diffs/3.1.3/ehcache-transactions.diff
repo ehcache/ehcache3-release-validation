@@ -1,0 +1,36 @@
+diff --git a/META-INF/MANIFEST.MF b/META-INF/MANIFEST.MF
+index 2b7dc73..d2d71b7 100644
+--- a/META-INF/MANIFEST.MF
++++ b/META-INF/MANIFEST.MF
+@@ -1,5 +1,5 @@
+ Manifest-Version: 1.0
+-Build-Time: 2019-04-22T08:17:34-0500
++Build-Time: 2016-09-30T02:41:50-0700
+ Export-Package: org.ehcache.transactions.xa;uses:="javax.transaction.x
+  a,org.ehcache.core.internal.resilience",org.ehcache.transactions.xa.c
+  onfiguration;uses:="org.ehcache.spi.service",org.ehcache.transactions
+@@ -14,19 +14,19 @@
+  transactions.xa.internal.txmgr,org.ehcache.transactions.xa.internal.t
+  xmgr.provider,org.ehcache.transactions.xa.internal.xml
+ Implementation-Title: ehcache-transactions
+-Implementation-Version: 3.1.3 784fbf431eba382c076ea0f44fdc62a8137bca8d
+-Built-By: cdennis
++Implementation-Version: 3.1.3 5a797f067d9718c1be978f5fdf2e05a87502b1c0
++Built-By: jenkins-slave
+ Tool: Bnd-2.4.0.201411031534
+-Built-JDK: 1.6.0_65
++Built-JDK: 1.6.0_45
+ Bundle-Name: Ehcache 3
+ provider: gradle
+-Created-By: 1.6.0_65 (Apple Inc.)
++Created-By: 1.6.0_45 (Sun Microsystems Inc.)
+ Bundle-RequiredExecutionEnvironment: JavaSE-1.6
+ Require-Capability: osgi.ee;filter:="(&(osgi.ee=JavaSE)(version=1.6))"
+ Bundle-Vendor: Terracotta Inc., a wholly-owned subsidiary of Software 
+  AG USA, Inc.
+ Bundle-Version: 3.1.3
+-Bnd-LastModified: 1555939054000
++Bnd-LastModified: 1475228510000
+ Bundle-ManifestVersion: 2
+ Bundle-Description: Ehcache is an open-source caching library, complia
+  nt with the JSR-107 standard.

@@ -1,0 +1,30 @@
+diff --git a/META-INF/MANIFEST.MF b/META-INF/MANIFEST.MF
+index 919eb79..dba14f3 100644
+--- a/META-INF/MANIFEST.MF
++++ b/META-INF/MANIFEST.MF
+@@ -1,7 +1,7 @@
+ Manifest-Version: 1.0
+ Bundle-SymbolicName: org.ehcache.modules.ehcache-impl
+ Bundle-ManifestVersion: 2
+-Bnd-LastModified: 1555941252000
++Bnd-LastModified: 1551137329000
+ Import-Package: org.ehcache,org.ehcache.config,org.ehcache.config.unit
+  s,org.ehcache.core,org.ehcache.core.collections,org.ehcache.core.conf
+  ig,org.ehcache.core.config.store,org.ehcache.core.events,org.ehcache.
+@@ -83,5 +83,5 @@
+  .offheap,org.ehcache.impl.internal.store.offheap.factories,org.ehcach
+  e.impl.internal.store.offheap.portability,org.ehcache.impl.internal.s
+  tore.tiering,org.ehcache.impl.internal.util
+-Created-By: 1.8.0_191 (Oracle Corporation)
++Created-By: 1.8.0_202 (Oracle Corporation)
+ 
+diff --git a/META-INF/maven/org.ehcache.modules/ehcache-impl/pom.properties b/META-INF/maven/org.ehcache.modules/ehcache-impl/pom.properties
+index 9459d97..b6a24ce 100644
+--- a/META-INF/maven/org.ehcache.modules/ehcache-impl/pom.properties
++++ b/META-INF/maven/org.ehcache.modules/ehcache-impl/pom.properties
+@@ -1,4 +1,4 @@
+-#Mon Apr 22 09:54:01 EDT 2019
++#Mon Feb 25 15:28:49 PST 2019
+ version=3.7.0
+ groupId=org.ehcache.modules
+ artifactId=ehcache-impl

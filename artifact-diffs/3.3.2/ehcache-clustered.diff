@@ -1,0 +1,36 @@
+diff --git a/META-INF/MANIFEST.MF b/META-INF/MANIFEST.MF
+index 5e69c1b..6ae443b 100644
+--- a/META-INF/MANIFEST.MF
++++ b/META-INF/MANIFEST.MF
+@@ -4,10 +4,10 @@
+  nt with the JSR-107 standard.
+ Bundle-License: LICENSE
+ Bundle-SymbolicName: org.ehcache.ehcache-clustered
+-Implementation-Version: 3.3.2 996b52e3ed8e395461c5bc44a68b42b318b801d5
+-Built-By: cdennis
++Implementation-Version: 3.3.2 2c71f6af4ce0528480d59e820c248ab6cf9d2bbb
++Built-By: jenkins-slave
+ Bundle-ManifestVersion: 2
+-Bnd-LastModified: 1555940095000
++Bnd-LastModified: 1503996570000
+ Bundle-RequiredExecutionEnvironment: JavaSE-1.6
+ Bundle-DocURL: http://ehcache.org
+ Bundle-Vendor: Terracotta Inc., a wholly-owned subsidiary of Software 
+@@ -26,7 +26,7 @@
+  ache.xml,org.ehcache.xml.exceptions,org.ehcache.xml.model,org.slf4j;v
+  ersion="[1.7,2)",org.w3c.dom
+ Require-Capability: osgi.ee;filter:="(&(osgi.ee=JavaSE)(version=1.6))"
+-Built-JDK: 1.8.0_191
++Built-JDK: 1.8.0_131
+ Tool: Bnd-3.2.0.201605172007
+ Export-Package: org.ehcache.clustered.client.config;uses:="org.ehcache
+  ,org.ehcache.clustered.client.service,org.ehcache.clustered.common,or
+@@ -85,6 +85,6 @@
+  decoding,org.terracotta.runnel.decoding.fields,org.terracotta.runnel.
+  encoding,org.terracotta.runnel.encoding.dataholders,org.terracotta.ru
+  nnel.metadata,org.terracotta.runnel.utils
+-Build-Time: 2019-04-22T09:34:55-0400
+-Created-By: 1.8.0_191 (Oracle Corporation)
++Build-Time: 2017-08-29T01:49:30-0700
++Created-By: 1.8.0_131 (Oracle Corporation)
+ 

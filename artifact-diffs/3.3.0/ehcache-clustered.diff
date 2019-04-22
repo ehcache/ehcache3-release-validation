@@ -1,0 +1,36 @@
+diff --git a/META-INF/MANIFEST.MF b/META-INF/MANIFEST.MF
+index 56706e4..6731279 100644
+--- a/META-INF/MANIFEST.MF
++++ b/META-INF/MANIFEST.MF
+@@ -4,10 +4,10 @@
+  nt with the JSR-107 standard.
+ Bundle-License: LICENSE
+ Bundle-SymbolicName: org.ehcache.ehcache-clustered
+-Implementation-Version: 3.3.0 1b86f4d8a6be7a90dea0482bcfb1fb75fb22d7cd
+-Built-By: cdennis
++Implementation-Version: 3.3.0 fa4b4a8afb003e55eb74a2da228cacbbd2038073
++Built-By: jenkins-slave
+ Bundle-ManifestVersion: 2
+-Bnd-LastModified: 1555939837000
++Bnd-LastModified: 1488220786000
+ Bundle-RequiredExecutionEnvironment: JavaSE-1.6
+ Bundle-DocURL: http://ehcache.org
+ Bundle-Vendor: Terracotta Inc., a wholly-owned subsidiary of Software 
+@@ -66,7 +66,7 @@
+  tta.runnel.utils,org.terracotta.statistics,org.terracotta.statistics.
+  observer,org.w3c.dom,sun.misc
+ Require-Capability: osgi.ee;filter:="(&(osgi.ee=JavaSE)(version=1.6))"
+-Built-JDK: 1.8.0_191
++Built-JDK: 1.8.0_121
+ Tool: Bnd-3.2.0.201605172007
+ Export-Package: com.tc.async.api;uses:="com.tc.exception,com.tc.lang,c
+  om.tc.logging,com.tc.stats,com.tc.text",com.tc.async.impl;uses:="com.
+@@ -264,6 +264,6 @@
+ Bundle-Name: Ehcache 3
+ Bundle-Version: 3.3.0
+ provider: gradle
+-Build-Time: 2019-04-22T09:30:37-0400
+-Created-By: 1.8.0_191 (Oracle Corporation)
++Build-Time: 2017-02-27T13:39:46-0500
++Created-By: 1.8.0_121 (Oracle Corporation)
+ 

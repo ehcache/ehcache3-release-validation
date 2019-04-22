@@ -1,0 +1,28 @@
+diff --git a/META-INF/MANIFEST.MF b/META-INF/MANIFEST.MF
+index e30de5d..1b22e9d 100644
+--- a/META-INF/MANIFEST.MF
++++ b/META-INF/MANIFEST.MF
+@@ -15,11 +15,11 @@
+ Bundle-Version: 3.7.0
+ Bundle-Name: ehcache-api
+ Bundle-ManifestVersion: 2
+-Bnd-LastModified: 1555941243000
++Bnd-LastModified: 1551137328000
+ Import-Package: org.ehcache,org.ehcache.config,org.ehcache.event,org.e
+  hcache.expiry,org.ehcache.spi.loaderwriter,org.ehcache.spi.persistenc
+  e,org.ehcache.spi.serialization,org.ehcache.spi.service
+ Require-Capability: osgi.ee;filter:="(&(osgi.ee=JavaSE)(version=1.8))"
+-Created-By: 1.8.0_191 (Oracle Corporation)
++Created-By: 1.8.0_202 (Oracle Corporation)
+ Tool: Bnd-4.0.0.201805111645
+ 
+diff --git a/META-INF/maven/org.ehcache.modules/ehcache-api/pom.properties b/META-INF/maven/org.ehcache.modules/ehcache-api/pom.properties
+index b62c178..776489f 100644
+--- a/META-INF/maven/org.ehcache.modules/ehcache-api/pom.properties
++++ b/META-INF/maven/org.ehcache.modules/ehcache-api/pom.properties
+@@ -1,4 +1,4 @@
+-#Mon Apr 22 09:54:03 EDT 2019
++#Mon Feb 25 15:28:48 PST 2019
+ version=3.7.0
+ groupId=org.ehcache.modules
+ artifactId=ehcache-api

@@ -1,0 +1,36 @@
+diff --git a/META-INF/MANIFEST.MF b/META-INF/MANIFEST.MF
+index 85d6b28..754d9d6 100644
+--- a/META-INF/MANIFEST.MF
++++ b/META-INF/MANIFEST.MF
+@@ -4,10 +4,10 @@
+  nt with the JSR-107 standard.
+ Bundle-License: LICENSE
+ Bundle-SymbolicName: org.ehcache.ehcache
+-Implementation-Version: 3.2.1 54a10d76ce1f08d840f459d8928219ee8dfa5f40
+-Built-By: cdennis
++Implementation-Version: 3.2.1 09a6179ca360d626e25bbba90f4170771b95a178
++Built-By: jenkins-slave
+ Bundle-ManifestVersion: 2
+-Bnd-LastModified: 1555939448000
++Bnd-LastModified: 1488207152000
+ Bundle-RequiredExecutionEnvironment: JavaSE-1.6
+ Bundle-DocURL: http://ehcache.org
+ Bundle-Vendor: Terracotta Inc., a wholly-owned subsidiary of Software 
+@@ -42,7 +42,7 @@
+  .statistics.observer,org.terracotta.statistics.util,org.w3c.dom,org.x
+  ml.sax
+ Require-Capability: osgi.ee;filter:="(&(osgi.ee=JavaSE)(version=1.6))"
+-Built-JDK: 1.8.0_191
++Built-JDK: 1.8.0_121
+ Tool: Bnd-3.2.0.201605172007
+ Export-Package: org.ehcache;uses:="org.ehcache.config,org.ehcache.spi.
+  loaderwriter",org.ehcache.config;uses:="org.ehcache.event,org.ehcache
+@@ -159,6 +159,6 @@
+  racotta.offheapstore.storage,org.terracotta.offheapstore.storage.allo
+  cator,org.terracotta.offheapstore.storage.listener,org.terracotta.off
+  heapstore.storage.portability,org.terracotta.offheapstore.util
+-Build-Time: 2019-04-22T09:24:08-0400
+-Created-By: 1.8.0_191 (Oracle Corporation)
++Build-Time: 2017-02-27T09:52:32-0500
++Created-By: 1.8.0_121 (Oracle Corporation)
+ 

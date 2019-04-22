@@ -1,0 +1,17 @@
+diff --git a/META-INF/MANIFEST.MF b/META-INF/MANIFEST.MF
+index 37543a6..e54fdbe 100644
+--- a/META-INF/MANIFEST.MF
++++ b/META-INF/MANIFEST.MF
+@@ -1,8 +1,8 @@
+ Manifest-Version: 1.0
+ provider: gradle
+ Implementation-Title: ehcache-impl
+-Implementation-Version: 3.0.1 249ab4d122d5db980270b1d644f3dd7e890412cb
+-Built-By: cdennis
+-Built-JDK: 1.6.0_65
+-Build-Time: 2019-04-22T08:05:01-0500
++Implementation-Version: 3.0.1 37ad632172e516cfa0ae1dd164216539063024c7
++Built-By: jenkins-slave
++Built-JDK: 1.6.0_45
++Build-Time: 2016-05-09T03:00:47-0700
+ 

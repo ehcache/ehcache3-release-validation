@@ -1,0 +1,30 @@
+diff --git a/META-INF/MANIFEST.MF b/META-INF/MANIFEST.MF
+index 8703740..b335463 100644
+--- a/META-INF/MANIFEST.MF
++++ b/META-INF/MANIFEST.MF
+@@ -1,7 +1,7 @@
+ Manifest-Version: 1.0
+ Bundle-SymbolicName: org.ehcache.modules.ehcache-core
+ Bundle-ManifestVersion: 2
+-Bnd-LastModified: 1555941246000
++Bnd-LastModified: 1551137328000
+ Import-Package: javax.annotation,org.ehcache,org.ehcache.config,org.eh
+  cache.core,org.ehcache.core.collections,org.ehcache.core.config,org.e
+  hcache.core.config.store,org.ehcache.core.events,org.ehcache.core.exc
+@@ -51,5 +51,5 @@
+ Private-Package: org.ehcache.core.internal.resilience,org.ehcache.core
+  .internal.util
+ Bundle-Activator: org.ehcache.core.osgi.EhcacheActivator
+-Created-By: 1.8.0_191 (Oracle Corporation)
++Created-By: 1.8.0_202 (Oracle Corporation)
+ 
+diff --git a/META-INF/maven/org.ehcache.modules/ehcache-core/pom.properties b/META-INF/maven/org.ehcache.modules/ehcache-core/pom.properties
+index e81efb6..789ef78 100644
+--- a/META-INF/maven/org.ehcache.modules/ehcache-core/pom.properties
++++ b/META-INF/maven/org.ehcache.modules/ehcache-core/pom.properties
+@@ -1,4 +1,4 @@
+-#Mon Apr 22 09:54:01 EDT 2019
++#Mon Feb 25 15:28:48 PST 2019
+ version=3.7.0
+ groupId=org.ehcache.modules
+ artifactId=ehcache-core

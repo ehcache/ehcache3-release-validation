@@ -1,0 +1,595 @@
+diff --git a/META-INF/MANIFEST.MF b/META-INF/MANIFEST.MF
+index 9b15637..b45488f 100644
+--- a/META-INF/MANIFEST.MF
++++ b/META-INF/MANIFEST.MF
+@@ -1,8 +1,8 @@
+ Manifest-Version: 1.0
+ Implementation-Title: ehcache-server
+-Implementation-Version: 3.2.0 cbdfaf86a6f986855593b9dd7bde2786431197e7
++Implementation-Version: 3.2.0 8ae3207066cb7c986c433ac30c277dd79e4e9648
+ provider: gradle
+-Built-By: cdennis
+-Build-Time: 2019-04-22T09:20:39-0400
+-Built-JDK: 1.8.0_191
++Built-By: jenkins-slave
++Build-Time: 2016-12-12T15:25:18-0800
++Built-JDK: 1.8.0_71
+ 
+diff --git a/org/ehcache/clustered/server/EhcacheActiveEntity.class.asm b/org/ehcache/clustered/server/EhcacheActiveEntity.class.asm
+index 603458a..59707bf 100644
+--- a/org/ehcache/clustered/server/EhcacheActiveEntity.class.asm
++++ b/org/ehcache/clustered/server/EhcacheActiveEntity.class.asm
+@@ -302,7 +302,7 @@
+       // arguments:
+       (Ljava/lang/Object;)V, 
+       // handle kind 0x7 : INVOKESPECIAL
+-      org/ehcache/clustered/server/EhcacheActiveEntity.lambda$addInflightInvalidationsForEventualCaches$5(Ljava/lang/String;)V, 
++      org/ehcache/clustered/server/EhcacheActiveEntity.lambda$addInflightInvalidationsForEventualCaches$17(Ljava/lang/String;)V, 
+       (Ljava/lang/String;)V
+     ]
+     INVOKEINTERFACE java/util/Set.forEach (Ljava/util/function/Consumer;)V (itf)
+@@ -355,7 +355,7 @@
+       // arguments:
+       (Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;, 
+       // handle kind 0x6 : INVOKESTATIC
+-      org/ehcache/clustered/server/EhcacheActiveEntity.lambda$addInflightInvalidationsForStrongCache$1(Lorg/terracotta/entity/ClientDescriptor;Ljava/util/Set;Lorg/ehcache/clustered/common/internal/messages/ReconnectMessage;Ljava/lang/String;Ljava/lang/String;Ljava/util/List;)Ljava/util/List;, 
++      org/ehcache/clustered/server/EhcacheActiveEntity.lambda$addInflightInvalidationsForStrongCache$13(Lorg/terracotta/entity/ClientDescriptor;Ljava/util/Set;Lorg/ehcache/clustered/common/internal/messages/ReconnectMessage;Ljava/lang/String;Ljava/lang/String;Ljava/util/List;)Ljava/util/List;, 
+       (Ljava/lang/String;Ljava/util/List;)Ljava/util/List;
+     ]
+     INVOKEVIRTUAL java/util/concurrent/ConcurrentHashMap.compute (Ljava/lang/Object;Ljava/util/function/BiFunction;)Ljava/lang/Object;
+@@ -780,7 +780,7 @@
+       // arguments:
+       (J)V, 
+       // handle kind 0x7 : INVOKESPECIAL
+-      org/ehcache/clustered/server/EhcacheActiveEntity.lambda$createServerStore$9(Ljava/lang/String;J)V, 
++      org/ehcache/clustered/server/EhcacheActiveEntity.lambda$createServerStore$21(Ljava/lang/String;J)V, 
+       (J)V
+     ]
+     INVOKEINTERFACE org/ehcache/clustered/server/ServerSideServerStore.setEvictionListener (Lorg/ehcache/clustered/server/ServerStoreEvictionListener;)V (itf)
+@@ -1326,7 +1326,7 @@
+       // arguments:
+       (J)V, 
+       // handle kind 0x7 : INVOKESPECIAL
+-      org/ehcache/clustered/server/EhcacheActiveEntity.lambda$handleReconnect$0(Ljava/lang/String;J)V, 
++      org/ehcache/clustered/server/EhcacheActiveEntity.lambda$handleReconnect$12(Ljava/lang/String;J)V, 
+       (J)V
+     ]
+     INVOKEINTERFACE org/ehcache/clustered/server/ServerSideServerStore.setEvictionListener (Lorg/ehcache/clustered/server/ServerStoreEvictionListener;)V (itf)
+@@ -1958,7 +1958,7 @@
+       // arguments:
+       (Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;, 
+       // handle kind 0x7 : INVOKESPECIAL
+-      org/ehcache/clustered/server/EhcacheActiveEntity.lambda$invokeServerStoreOperation$8(Ljava/lang/String;Ljava/util/List;)Ljava/util/List;, 
++      org/ehcache/clustered/server/EhcacheActiveEntity.lambda$invokeServerStoreOperation$20(Ljava/lang/String;Ljava/util/List;)Ljava/util/List;, 
+       (Ljava/lang/String;Ljava/util/List;)Ljava/util/List;
+     ]
+     INVOKEVIRTUAL java/util/concurrent/ConcurrentHashMap.computeIfPresent (Ljava/lang/Object;Ljava/util/function/BiFunction;)Ljava/lang/Object;
+@@ -2267,7 +2267,7 @@
+     MAXLOCALS = 2
+ 
+   // access flags 0x1002
+-  private synthetic lambda$addInflightInvalidationsForEventualCaches$5(Ljava/lang/String;)V
++  private synthetic lambda$addInflightInvalidationsForEventualCaches$17(Ljava/lang/String;)V
+     ALOAD 0
+     GETFIELD org/ehcache/clustered/server/EhcacheActiveEntity.ehcacheStateService : Lorg/ehcache/clustered/server/state/EhcacheStateService;
+     ALOAD 1
+@@ -2285,7 +2285,7 @@
+       // arguments:
+       (Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;, 
+       // handle kind 0x6 : INVOKESTATIC
+-      org/ehcache/clustered/server/EhcacheActiveEntity.lambda$null$4(Lorg/ehcache/clustered/server/state/InvalidationTracker;Ljava/lang/String;Ljava/util/List;)Ljava/util/List;, 
++      org/ehcache/clustered/server/EhcacheActiveEntity.lambda$null$16(Lorg/ehcache/clustered/server/state/InvalidationTracker;Ljava/lang/String;Ljava/util/List;)Ljava/util/List;, 
+       (Ljava/lang/String;Ljava/util/List;)Ljava/util/List;
+     ]
+     INVOKEVIRTUAL java/util/concurrent/ConcurrentHashMap.compute (Ljava/lang/Object;Ljava/util/function/BiFunction;)Ljava/lang/Object;
+@@ -2299,7 +2299,7 @@
+     MAXLOCALS = 3
+ 
+   // access flags 0x100A
+-  private static synthetic lambda$addInflightInvalidationsForStrongCache$1(Lorg/terracotta/entity/ClientDescriptor;Ljava/util/Set;Lorg/ehcache/clustered/common/internal/messages/ReconnectMessage;Ljava/lang/String;Ljava/lang/String;Ljava/util/List;)Ljava/util/List;
++  private static synthetic lambda$addInflightInvalidationsForStrongCache$13(Lorg/terracotta/entity/ClientDescriptor;Ljava/util/Set;Lorg/ehcache/clustered/common/internal/messages/ReconnectMessage;Ljava/lang/String;Ljava/lang/String;Ljava/util/List;)Ljava/util/List;
+     ALOAD 5
+     IFNONNULL L0
+     NEW java/util/ArrayList
+@@ -2324,7 +2324,7 @@
+     MAXLOCALS = 6
+ 
+   // access flags 0x1002
+-  private synthetic lambda$createServerStore$9(Ljava/lang/String;J)V
++  private synthetic lambda$createServerStore$21(Ljava/lang/String;J)V
+     ALOAD 0
+     ALOAD 1
+     LLOAD 2
+@@ -2334,7 +2334,7 @@
+     MAXLOCALS = 4
+ 
+   // access flags 0x1002
+-  private synthetic lambda$handleReconnect$0(Ljava/lang/String;J)V
++  private synthetic lambda$handleReconnect$12(Ljava/lang/String;J)V
+     ALOAD 0
+     ALOAD 1
+     LLOAD 2
+@@ -2344,7 +2344,7 @@
+     MAXLOCALS = 4
+ 
+   // access flags 0x1002
+-  private synthetic lambda$invokeServerStoreOperation$8(Ljava/lang/String;Ljava/util/List;)Ljava/util/List;
++  private synthetic lambda$invokeServerStoreOperation$20(Ljava/lang/String;Ljava/util/List;)Ljava/util/List;
+     GETSTATIC org/ehcache/clustered/server/EhcacheActiveEntity.LOGGER : Lorg/slf4j/Logger;
+     LDC "Stalling all operations for cache {} for firing inflight invalidations again."
+     ALOAD 1
+@@ -2358,7 +2358,7 @@
+       // arguments:
+       (Ljava/lang/Object;)V, 
+       // handle kind 0x7 : INVOKESPECIAL
+-      org/ehcache/clustered/server/EhcacheActiveEntity.lambda$null$7(Ljava/lang/String;Lorg/ehcache/clustered/server/EhcacheActiveEntity$InvalidationTuple;)V, 
++      org/ehcache/clustered/server/EhcacheActiveEntity.lambda$null$19(Ljava/lang/String;Lorg/ehcache/clustered/server/EhcacheActiveEntity$InvalidationTuple;)V, 
+       (Lorg/ehcache/clustered/server/EhcacheActiveEntity$InvalidationTuple;)V
+     ]
+     INVOKEINTERFACE java/util/List.forEach (Ljava/util/function/Consumer;)V (itf)
+@@ -2368,7 +2368,7 @@
+     MAXLOCALS = 3
+ 
+   // access flags 0x100A
+-  private static synthetic lambda$null$2(Lorg/ehcache/clustered/server/ServerSideServerStore;Ljava/util/concurrent/atomic/AtomicLong;Ljava/util/concurrent/atomic/AtomicReference;Ljava/lang/Long;Lorg/terracotta/entity/PassiveSynchronizationChannel;Ljava/lang/String;Ljava/lang/Long;)V
++  private static synthetic lambda$null$14(Lorg/ehcache/clustered/server/ServerSideServerStore;Ljava/util/concurrent/atomic/AtomicLong;Ljava/util/concurrent/atomic/AtomicReference;Ljava/lang/Long;Lorg/terracotta/entity/PassiveSynchronizationChannel;Ljava/lang/String;Ljava/lang/Long;)V
+     TRYCATCHBLOCK L0 L1 L2 java/util/concurrent/TimeoutException
+    L0
+     ALOAD 0
+@@ -2442,7 +2442,7 @@
+     MAXLOCALS = 10
+ 
+   // access flags 0x100A
+-  private static synthetic lambda$null$4(Lorg/ehcache/clustered/server/state/InvalidationTracker;Ljava/lang/String;Ljava/util/List;)Ljava/util/List;
++  private static synthetic lambda$null$16(Lorg/ehcache/clustered/server/state/InvalidationTracker;Ljava/lang/String;Ljava/util/List;)Ljava/util/List;
+     ALOAD 2
+     IFNONNULL L0
+     NEW java/util/ArrayList
+@@ -2468,7 +2468,7 @@
+     MAXLOCALS = 3
+ 
+   // access flags 0x1002
+-  private synthetic lambda$null$6(Lorg/ehcache/clustered/server/EhcacheActiveEntity$InvalidationTuple;Ljava/lang/String;Ljava/lang/Long;)V
++  private synthetic lambda$null$18(Lorg/ehcache/clustered/server/EhcacheActiveEntity$InvalidationTuple;Ljava/lang/String;Ljava/lang/Long;)V
+     ALOAD 0
+     ALOAD 1
+     INVOKEVIRTUAL org/ehcache/clustered/server/EhcacheActiveEntity$InvalidationTuple.getClientDescriptor ()Lorg/terracotta/entity/ClientDescriptor;
+@@ -2481,7 +2481,7 @@
+     MAXLOCALS = 4
+ 
+   // access flags 0x1002
+-  private synthetic lambda$null$7(Ljava/lang/String;Lorg/ehcache/clustered/server/EhcacheActiveEntity$InvalidationTuple;)V
++  private synthetic lambda$null$19(Ljava/lang/String;Lorg/ehcache/clustered/server/EhcacheActiveEntity$InvalidationTuple;)V
+     ALOAD 2
+     INVOKEVIRTUAL org/ehcache/clustered/server/EhcacheActiveEntity$InvalidationTuple.isClearInProgress ()Z
+     IFEQ L0
+@@ -2502,7 +2502,7 @@
+       // arguments:
+       (Ljava/lang/Object;)V, 
+       // handle kind 0x7 : INVOKESPECIAL
+-      org/ehcache/clustered/server/EhcacheActiveEntity.lambda$null$6(Lorg/ehcache/clustered/server/EhcacheActiveEntity$InvalidationTuple;Ljava/lang/String;Ljava/lang/Long;)V, 
++      org/ehcache/clustered/server/EhcacheActiveEntity.lambda$null$18(Lorg/ehcache/clustered/server/EhcacheActiveEntity$InvalidationTuple;Ljava/lang/String;Ljava/lang/Long;)V, 
+       (Ljava/lang/Long;)V
+     ]
+     INVOKEINTERFACE java/util/Set.forEach (Ljava/util/function/Consumer;)V (itf)
+@@ -2511,7 +2511,7 @@
+     MAXLOCALS = 3
+ 
+   // access flags 0x1002
+-  private synthetic lambda$synchronizeKeyToPassive$3(ILjava/util/concurrent/atomic/AtomicLong;Ljava/lang/Long;Lorg/terracotta/entity/PassiveSynchronizationChannel;Ljava/lang/String;)V
++  private synthetic lambda$synchronizeKeyToPassive$15(ILjava/util/concurrent/atomic/AtomicLong;Ljava/lang/Long;Lorg/terracotta/entity/PassiveSynchronizationChannel;Ljava/lang/String;)V
+     ALOAD 0
+     GETFIELD org/ehcache/clustered/server/EhcacheActiveEntity.ehcacheStateService : Lorg/ehcache/clustered/server/state/EhcacheStateService;
+     ALOAD 5
+@@ -2544,7 +2544,7 @@
+       // arguments:
+       (Ljava/lang/Object;)V, 
+       // handle kind 0x6 : INVOKESTATIC
+-      org/ehcache/clustered/server/EhcacheActiveEntity.lambda$null$2(Lorg/ehcache/clustered/server/ServerSideServerStore;Ljava/util/concurrent/atomic/AtomicLong;Ljava/util/concurrent/atomic/AtomicReference;Ljava/lang/Long;Lorg/terracotta/entity/PassiveSynchronizationChannel;Ljava/lang/String;Ljava/lang/Long;)V, 
++      org/ehcache/clustered/server/EhcacheActiveEntity.lambda$null$14(Lorg/ehcache/clustered/server/ServerSideServerStore;Ljava/util/concurrent/atomic/AtomicLong;Ljava/util/concurrent/atomic/AtomicReference;Ljava/lang/Long;Lorg/terracotta/entity/PassiveSynchronizationChannel;Ljava/lang/String;Ljava/lang/Long;)V, 
+       (Ljava/lang/Long;)V
+     ]
+     INVOKEINTERFACE java/util/Set.forEach (Ljava/util/function/Consumer;)V (itf)
+@@ -2813,7 +2813,7 @@
+       // arguments:
+       (Ljava/lang/Object;)V, 
+       // handle kind 0x7 : INVOKESPECIAL
+-      org/ehcache/clustered/server/EhcacheActiveEntity.lambda$synchronizeKeyToPassive$3(ILjava/util/concurrent/atomic/AtomicLong;Ljava/lang/Long;Lorg/terracotta/entity/PassiveSynchronizationChannel;Ljava/lang/String;)V, 
++      org/ehcache/clustered/server/EhcacheActiveEntity.lambda$synchronizeKeyToPassive$15(ILjava/util/concurrent/atomic/AtomicLong;Ljava/lang/Long;Lorg/terracotta/entity/PassiveSynchronizationChannel;Ljava/lang/String;)V, 
+       (Ljava/lang/String;)V
+     ]
+     INVOKEINTERFACE java/util/Set.forEach (Ljava/util/function/Consumer;)V (itf)
+diff --git a/org/ehcache/clustered/server/EhcachePassiveEntity.class.asm b/org/ehcache/clustered/server/EhcachePassiveEntity.class.asm
+index efa456d..4ee440c 100644
+--- a/org/ehcache/clustered/server/EhcachePassiveEntity.class.asm
++++ b/org/ehcache/clustered/server/EhcachePassiveEntity.class.asm
+@@ -742,7 +742,7 @@
+       // arguments:
+       (Ljava/lang/Object;)V, 
+       // handle kind 0x6 : INVOKESTATIC
+-      org/ehcache/clustered/server/EhcachePassiveEntity.lambda$invokeSyncOperation$2(Lorg/ehcache/clustered/server/ServerSideServerStore;Ljava/util/Map$Entry;)V, 
++      org/ehcache/clustered/server/EhcachePassiveEntity.lambda$invokeSyncOperation$24(Lorg/ehcache/clustered/server/ServerSideServerStore;Ljava/util/Map$Entry;)V, 
+       (Ljava/util/Map$Entry;)V
+     ]
+     INVOKEINTERFACE java/util/Set.forEach (Ljava/util/function/Consumer;)V (itf)
+@@ -767,7 +767,7 @@
+     MAXLOCALS = 5
+ 
+   // access flags 0x100A
+-  private static synthetic lambda$invokeSyncOperation$2(Lorg/ehcache/clustered/server/ServerSideServerStore;Ljava/util/Map$Entry;)V
++  private static synthetic lambda$invokeSyncOperation$24(Lorg/ehcache/clustered/server/ServerSideServerStore;Ljava/util/Map$Entry;)V
+     ALOAD 0
+     ALOAD 1
+     INVOKEINTERFACE java/util/Map$Entry.getKey ()Ljava/lang/Object; (itf)
+@@ -782,7 +782,7 @@
+     MAXLOCALS = 2
+ 
+   // access flags 0x100A
+-  private static synthetic lambda$trackHashInvalidationForEventualCache$1(Ljava/lang/Long;Ljava/lang/Integer;)Ljava/lang/Integer;
++  private static synthetic lambda$trackHashInvalidationForEventualCache$23(Ljava/lang/Long;Ljava/lang/Integer;)Ljava/lang/Integer;
+     ALOAD 1
+     IFNONNULL L0
+     ICONST_1
+@@ -799,7 +799,7 @@
+     MAXLOCALS = 2
+ 
+   // access flags 0x100A
+-  private static synthetic lambda$untrackHashInvalidationForEventualCache$0(Ljava/lang/Long;Ljava/lang/Integer;)Ljava/lang/Integer;
++  private static synthetic lambda$untrackHashInvalidationForEventualCache$22(Ljava/lang/Long;Ljava/lang/Integer;)Ljava/lang/Integer;
+     ALOAD 1
+     INVOKEVIRTUAL java/lang/Integer.intValue ()I
+     ICONST_1
+@@ -857,7 +857,7 @@
+       // arguments:
+       (Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;, 
+       // handle kind 0x6 : INVOKESTATIC
+-      org/ehcache/clustered/server/EhcachePassiveEntity.lambda$trackHashInvalidationForEventualCache$1(Ljava/lang/Long;Ljava/lang/Integer;)Ljava/lang/Integer;, 
++      org/ehcache/clustered/server/EhcachePassiveEntity.lambda$trackHashInvalidationForEventualCache$23(Ljava/lang/Long;Ljava/lang/Integer;)Ljava/lang/Integer;, 
+       (Ljava/lang/Long;Ljava/lang/Integer;)Ljava/lang/Integer;
+     ]
+     INVOKEINTERFACE java/util/concurrent/ConcurrentMap.compute (Ljava/lang/Object;Ljava/util/function/BiFunction;)Ljava/lang/Object; (itf)
+@@ -884,7 +884,7 @@
+       // arguments:
+       (Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;, 
+       // handle kind 0x6 : INVOKESTATIC
+-      org/ehcache/clustered/server/EhcachePassiveEntity.lambda$untrackHashInvalidationForEventualCache$0(Ljava/lang/Long;Ljava/lang/Integer;)Ljava/lang/Integer;, 
++      org/ehcache/clustered/server/EhcachePassiveEntity.lambda$untrackHashInvalidationForEventualCache$22(Ljava/lang/Long;Ljava/lang/Integer;)Ljava/lang/Integer;, 
+       (Ljava/lang/Long;Ljava/lang/Integer;)Ljava/lang/Integer;
+     ]
+     INVOKEINTERFACE java/util/concurrent/ConcurrentMap.computeIfPresent (Ljava/lang/Object;Ljava/util/function/BiFunction;)Ljava/lang/Object; (itf)
+diff --git a/org/ehcache/clustered/server/EhcacheStateServiceImpl.class.asm b/org/ehcache/clustered/server/EhcacheStateServiceImpl.class.asm
+index 4cc2ed7..9b3ecf5 100644
+--- a/org/ehcache/clustered/server/EhcacheStateServiceImpl.class.asm
++++ b/org/ehcache/clustered/server/EhcacheStateServiceImpl.class.asm
+@@ -341,7 +341,9 @@
+     ALOAD 1
+     INVOKEVIRTUAL org/ehcache/clustered/common/ServerSideConfiguration.getDefaultServerResource ()Ljava/lang/String;
+     INVOKEVIRTUAL java/lang/StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+-    LDC " Server: "
++    LDC " "
++    INVOKEVIRTUAL java/lang/StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
++    LDC "Server: "
+     INVOKEVIRTUAL java/lang/StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+     ALOAD 0
+     GETFIELD org/ehcache/clustered/server/EhcacheStateServiceImpl.defaultServerResource : Ljava/lang/String;
+@@ -369,7 +371,9 @@
+     INVOKEVIRTUAL org/ehcache/clustered/common/ServerSideConfiguration.getResourcePools ()Ljava/util/Map;
+     INVOKEINTERFACE java/util/Map.keySet ()Ljava/util/Set; (itf)
+     INVOKEVIRTUAL java/lang/StringBuilder.append (Ljava/lang/Object;)Ljava/lang/StringBuilder;
+-    LDC " Server: "
++    LDC " "
++    INVOKEVIRTUAL java/lang/StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
++    LDC "Server: "
+     INVOKEVIRTUAL java/lang/StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+     ALOAD 0
+     GETFIELD org/ehcache/clustered/server/EhcacheStateServiceImpl.sharedResourcePools : Ljava/util/Map;
+@@ -417,12 +421,16 @@
+     INVOKEINTERFACE java/util/Map$Entry.getKey ()Ljava/lang/Object; (itf)
+     CHECKCAST java/lang/String
+     INVOKEVIRTUAL java/lang/StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+-    LDC "' not equal. Client: "
++    LDC "' not equal. "
++    INVOKEVIRTUAL java/lang/StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
++    LDC "Client: "
+     INVOKEVIRTUAL java/lang/StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+     ALOAD 3
+     INVOKEINTERFACE java/util/Map$Entry.getValue ()Ljava/lang/Object; (itf)
+     INVOKEVIRTUAL java/lang/StringBuilder.append (Ljava/lang/Object;)Ljava/lang/StringBuilder;
+-    LDC " Server: "
++    LDC " "
++    INVOKEVIRTUAL java/lang/StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
++    LDC "Server: "
+     INVOKEVIRTUAL java/lang/StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+     ALOAD 4
+     INVOKEVIRTUAL java/lang/StringBuilder.append (Ljava/lang/Object;)Ljava/lang/StringBuilder;
+@@ -1092,7 +1100,7 @@
+       // arguments:
+       (Ljava/lang/Object;)Ljava/lang/Object;, 
+       // handle kind 0x6 : INVOKESTATIC
+-      org/ehcache/clustered/server/EhcacheStateServiceImpl.lambda$getSharedResourcePools$0(Ljava/util/Map$Entry;)Lorg/ehcache/clustered/common/ServerSideConfiguration$Pool;, 
++      org/ehcache/clustered/server/EhcacheStateServiceImpl.lambda$getSharedResourcePools$25(Ljava/util/Map$Entry;)Lorg/ehcache/clustered/common/ServerSideConfiguration$Pool;, 
+       (Ljava/util/Map$Entry;)Lorg/ehcache/clustered/common/ServerSideConfiguration$Pool;
+     ]
+     INVOKESTATIC java/util/stream/Collectors.toMap (Ljava/util/function/Function;Ljava/util/function/Function;)Ljava/util/stream/Collector;
+@@ -1151,7 +1159,7 @@
+     MAXLOCALS = 1
+ 
+   // access flags 0x100A
+-  private static synthetic lambda$getSharedResourcePools$0(Ljava/util/Map$Entry;)Lorg/ehcache/clustered/common/ServerSideConfiguration$Pool;
++  private static synthetic lambda$getSharedResourcePools$25(Ljava/util/Map$Entry;)Lorg/ehcache/clustered/common/ServerSideConfiguration$Pool;
+     ALOAD 0
+     INVOKEINTERFACE java/util/Map$Entry.getValue ()Ljava/lang/Object; (itf)
+     CHECKCAST org/ehcache/clustered/server/state/ResourcePageSource
+@@ -1161,7 +1169,7 @@
+     MAXLOCALS = 1
+ 
+   // access flags 0x100A
+-  private static synthetic lambda$null$1(Ljava/util/Map$Entry;Lorg/ehcache/clustered/server/ServerStoreImpl;)Ljava/lang/Number; throws java/lang/Exception 
++  private static synthetic lambda$null$26(Ljava/util/Map$Entry;Lorg/ehcache/clustered/server/ServerStoreImpl;)Ljava/lang/Number; throws java/lang/Exception 
+     ALOAD 0
+     INVOKEINTERFACE java/util/Map$Entry.getValue ()Ljava/lang/Object; (itf)
+     CHECKCAST java/util/function/Function
+@@ -1173,7 +1181,7 @@
+     MAXLOCALS = 2
+ 
+   // access flags 0x100A
+-  private static synthetic lambda$null$3(Ljava/util/Map$Entry;Lorg/ehcache/clustered/server/state/ResourcePageSource;)Ljava/lang/Number; throws java/lang/Exception 
++  private static synthetic lambda$null$28(Ljava/util/Map$Entry;Lorg/ehcache/clustered/server/state/ResourcePageSource;)Ljava/lang/Number; throws java/lang/Exception 
+     ALOAD 0
+     INVOKEINTERFACE java/util/Map$Entry.getValue ()Ljava/lang/Object; (itf)
+     CHECKCAST java/util/function/Function
+@@ -1185,7 +1193,7 @@
+     MAXLOCALS = 2
+ 
+   // access flags 0x1002
+-  private synthetic lambda$registerPoolStatistics$4(Lorg/ehcache/clustered/server/state/ResourcePageSource;Ljava/lang/String;Ljava/util/Map$Entry;)V
++  private synthetic lambda$registerPoolStatistics$29(Lorg/ehcache/clustered/server/state/ResourcePageSource;Ljava/lang/String;Ljava/util/Map$Entry;)V
+     ALOAD 0
+     ALOAD 1
+     ALOAD 2
+@@ -1202,7 +1210,7 @@
+       // arguments:
+       ()Ljava/lang/Object;, 
+       // handle kind 0x6 : INVOKESTATIC
+-      org/ehcache/clustered/server/EhcacheStateServiceImpl.lambda$null$3(Ljava/util/Map$Entry;Lorg/ehcache/clustered/server/state/ResourcePageSource;)Ljava/lang/Number;, 
++      org/ehcache/clustered/server/EhcacheStateServiceImpl.lambda$null$28(Ljava/util/Map$Entry;Lorg/ehcache/clustered/server/state/ResourcePageSource;)Ljava/lang/Number;, 
+       ()Ljava/lang/Number;
+     ]
+     INVOKESPECIAL org/ehcache/clustered/server/EhcacheStateServiceImpl.registerStatistic (Ljava/lang/Object;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/util/concurrent/Callable;)V
+@@ -1211,7 +1219,7 @@
+     MAXLOCALS = 4
+ 
+   // access flags 0x1002
+-  private synthetic lambda$registerStoreStatistics$2(Lorg/ehcache/clustered/server/ServerStoreImpl;Ljava/lang/String;Ljava/util/Map$Entry;)V
++  private synthetic lambda$registerStoreStatistics$27(Lorg/ehcache/clustered/server/ServerStoreImpl;Ljava/lang/String;Ljava/util/Map$Entry;)V
+     ALOAD 0
+     ALOAD 1
+     ALOAD 2
+@@ -1228,7 +1236,7 @@
+       // arguments:
+       ()Ljava/lang/Object;, 
+       // handle kind 0x6 : INVOKESTATIC
+-      org/ehcache/clustered/server/EhcacheStateServiceImpl.lambda$null$1(Ljava/util/Map$Entry;Lorg/ehcache/clustered/server/ServerStoreImpl;)Ljava/lang/Number;, 
++      org/ehcache/clustered/server/EhcacheStateServiceImpl.lambda$null$26(Ljava/util/Map$Entry;Lorg/ehcache/clustered/server/ServerStoreImpl;)Ljava/lang/Number;, 
+       ()Ljava/lang/Number;
+     ]
+     INVOKESPECIAL org/ehcache/clustered/server/EhcacheStateServiceImpl.registerStatistic (Ljava/lang/Object;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/util/concurrent/Callable;)V
+@@ -1270,7 +1278,7 @@
+       // arguments:
+       (Ljava/lang/Object;)V, 
+       // handle kind 0x7 : INVOKESPECIAL
+-      org/ehcache/clustered/server/EhcacheStateServiceImpl.lambda$registerPoolStatistics$4(Lorg/ehcache/clustered/server/state/ResourcePageSource;Ljava/lang/String;Ljava/util/Map$Entry;)V, 
++      org/ehcache/clustered/server/EhcacheStateServiceImpl.lambda$registerPoolStatistics$29(Lorg/ehcache/clustered/server/state/ResourcePageSource;Ljava/lang/String;Ljava/util/Map$Entry;)V, 
+       (Ljava/util/Map$Entry;)V
+     ]
+     INVOKEINTERFACE java/util/stream/Stream.forEach (Ljava/util/function/Consumer;)V (itf)
+@@ -1335,7 +1343,7 @@
+       // arguments:
+       (Ljava/lang/Object;)V, 
+       // handle kind 0x7 : INVOKESPECIAL
+-      org/ehcache/clustered/server/EhcacheStateServiceImpl.lambda$registerStoreStatistics$2(Lorg/ehcache/clustered/server/ServerStoreImpl;Ljava/lang/String;Ljava/util/Map$Entry;)V, 
++      org/ehcache/clustered/server/EhcacheStateServiceImpl.lambda$registerStoreStatistics$27(Lorg/ehcache/clustered/server/ServerStoreImpl;Ljava/lang/String;Ljava/util/Map$Entry;)V, 
+       (Ljava/util/Map$Entry;)V
+     ]
+     INVOKEINTERFACE java/util/stream/Stream.forEach (Ljava/util/function/Consumer;)V (itf)
+diff --git a/org/ehcache/clustered/server/management/Management.class.asm b/org/ehcache/clustered/server/management/Management.class.asm
+index ebb661a..21d5abf 100644
+--- a/org/ehcache/clustered/server/management/Management.class.asm
++++ b/org/ehcache/clustered/server/management/Management.class.asm
+@@ -257,7 +257,7 @@
+     MAXLOCALS = 1
+ 
+   // access flags 0x1002
+-  private synthetic lambda$sharedPoolsConfigured$0(Ljava/util/Map$Entry;)V
++  private synthetic lambda$sharedPoolsConfigured$3(Ljava/util/Map$Entry;)V
+     ALOAD 0
+     GETFIELD org/ehcache/clustered/server/management/Management.managementRegistry : Lorg/terracotta/management/service/monitoring/ConsumerManagementRegistry;
+     NEW org/ehcache/clustered/server/management/PoolBinding
+@@ -409,7 +409,7 @@
+       // arguments:
+       (Ljava/lang/Object;)V, 
+       // handle kind 0x7 : INVOKESPECIAL
+-      org/ehcache/clustered/server/management/Management.lambda$sharedPoolsConfigured$0(Ljava/util/Map$Entry;)V, 
++      org/ehcache/clustered/server/management/Management.lambda$sharedPoolsConfigured$3(Ljava/util/Map$Entry;)V, 
+       (Ljava/util/Map$Entry;)V
+     ]
+     INVOKEINTERFACE java/util/Set.forEach (Ljava/util/function/Consumer;)V (itf)
+diff --git a/org/ehcache/clustered/server/management/PoolSettingsManagementProvider.class.asm b/org/ehcache/clustered/server/management/PoolSettingsManagementProvider.class.asm
+index a7c7a90..5240058 100644
+--- a/org/ehcache/clustered/server/management/PoolSettingsManagementProvider.class.asm
++++ b/org/ehcache/clustered/server/management/PoolSettingsManagementProvider.class.asm
+@@ -73,7 +73,7 @@
+       // arguments:
+       (Ljava/lang/Object;)Z, 
+       // handle kind 0x6 : INVOKESTATIC
+-      org/ehcache/clustered/server/management/PoolSettingsManagementProvider.lambda$getExposedObjects$0(Lorg/terracotta/management/registry/action/ExposedObject;)Z, 
++      org/ehcache/clustered/server/management/PoolSettingsManagementProvider.lambda$getExposedObjects$10(Lorg/terracotta/management/registry/action/ExposedObject;)Z, 
+       (Lorg/terracotta/management/registry/action/ExposedObject;)Z
+     ]
+     INVOKEINTERFACE java/util/stream/Stream.filter (Ljava/util/function/Predicate;)Ljava/util/stream/Stream; (itf)
+@@ -118,7 +118,7 @@
+     MAXLOCALS = 3
+ 
+   // access flags 0x100A
+-  private static synthetic lambda$getExposedObjects$0(Lorg/terracotta/management/registry/action/ExposedObject;)Z
++  private static synthetic lambda$getExposedObjects$10(Lorg/terracotta/management/registry/action/ExposedObject;)Z
+     ALOAD 0
+     INVOKEINTERFACE org/terracotta/management/registry/action/ExposedObject.getTarget ()Ljava/lang/Object; (itf)
+     GETSTATIC org/ehcache/clustered/server/management/PoolBinding.ALL_SHARED : Lorg/ehcache/clustered/server/management/PoolBinding;
+diff --git a/org/ehcache/clustered/server/management/PoolStatisticsManagementProvider.class.asm b/org/ehcache/clustered/server/management/PoolStatisticsManagementProvider.class.asm
+index ea77cd6..0a62bf3 100644
+--- a/org/ehcache/clustered/server/management/PoolStatisticsManagementProvider.class.asm
++++ b/org/ehcache/clustered/server/management/PoolStatisticsManagementProvider.class.asm
+@@ -106,7 +106,7 @@
+       // arguments:
+       (Ljava/lang/Object;)Z, 
+       // handle kind 0x6 : INVOKESTATIC
+-      org/ehcache/clustered/server/management/PoolStatisticsManagementProvider.lambda$getExposedObjects$0(Lorg/terracotta/management/registry/action/ExposedObject;)Z, 
++      org/ehcache/clustered/server/management/PoolStatisticsManagementProvider.lambda$getExposedObjects$11(Lorg/terracotta/management/registry/action/ExposedObject;)Z, 
+       (Lorg/terracotta/management/registry/action/ExposedObject;)Z
+     ]
+     INVOKEINTERFACE java/util/stream/Stream.filter (Ljava/util/function/Predicate;)Ljava/util/stream/Stream; (itf)
+@@ -144,7 +144,7 @@
+     MAXLOCALS = 4
+ 
+   // access flags 0x100A
+-  private static synthetic lambda$getExposedObjects$0(Lorg/terracotta/management/registry/action/ExposedObject;)Z
++  private static synthetic lambda$getExposedObjects$11(Lorg/terracotta/management/registry/action/ExposedObject;)Z
+     ALOAD 0
+     INVOKEINTERFACE org/terracotta/management/registry/action/ExposedObject.getTarget ()Ljava/lang/Object; (itf)
+     GETSTATIC org/ehcache/clustered/server/management/PoolBinding.ALL_SHARED : Lorg/ehcache/clustered/server/management/PoolBinding;
+diff --git a/org/ehcache/clustered/server/repo/ServerStateRepository.class.asm b/org/ehcache/clustered/server/repo/ServerStateRepository.class.asm
+index b5d6389..76cf87a 100644
+--- a/org/ehcache/clustered/server/repo/ServerStateRepository.class.asm
++++ b/org/ehcache/clustered/server/repo/ServerStateRepository.class.asm
+@@ -106,7 +106,7 @@
+       // arguments:
+       (Ljava/lang/Object;)Ljava/lang/Object;, 
+       // handle kind 0x6 : INVOKESTATIC
+-      org/ehcache/clustered/server/repo/ServerStateRepository.lambda$invoke$0(Ljava/util/Map$Entry;)Ljava/util/AbstractMap$SimpleEntry;, 
++      org/ehcache/clustered/server/repo/ServerStateRepository.lambda$invoke$6(Ljava/util/Map$Entry;)Ljava/util/AbstractMap$SimpleEntry;, 
+       (Ljava/util/Map$Entry;)Ljava/util/AbstractMap$SimpleEntry;
+     ]
+     INVOKEINTERFACE java/util/stream/Stream.map (Ljava/util/function/Function;)Ljava/util/stream/Stream; (itf)
+@@ -136,7 +136,7 @@
+     MAXLOCALS = 7
+ 
+   // access flags 0x100A
+-  private static synthetic lambda$invoke$0(Ljava/util/Map$Entry;)Ljava/util/AbstractMap$SimpleEntry;
++  private static synthetic lambda$invoke$6(Ljava/util/Map$Entry;)Ljava/util/AbstractMap$SimpleEntry;
+     NEW java/util/AbstractMap$SimpleEntry
+     DUP
+     ALOAD 0
+diff --git a/org/ehcache/clustered/server/state/ClientMessageTracker.class.asm b/org/ehcache/clustered/server/state/ClientMessageTracker.class.asm
+index 1be0dd5..947e132 100644
+--- a/org/ehcache/clustered/server/state/ClientMessageTracker.class.asm
++++ b/org/ehcache/clustered/server/state/ClientMessageTracker.class.asm
+@@ -59,7 +59,7 @@
+       // arguments:
+       (Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;, 
+       // handle kind 0x6 : INVOKESTATIC
+-      org/ehcache/clustered/server/state/ClientMessageTracker.lambda$applied$1(Ljava/util/UUID;JLjava/util/UUID;Lorg/ehcache/clustered/server/state/MessageTracker;)Lorg/ehcache/clustered/server/state/MessageTracker;, 
++      org/ehcache/clustered/server/state/ClientMessageTracker.lambda$applied$5(Ljava/util/UUID;JLjava/util/UUID;Lorg/ehcache/clustered/server/state/MessageTracker;)Lorg/ehcache/clustered/server/state/MessageTracker;, 
+       (Ljava/util/UUID;Lorg/ehcache/clustered/server/state/MessageTracker;)Lorg/ehcache/clustered/server/state/MessageTracker;
+     ]
+     INVOKEINTERFACE java/util/concurrent/ConcurrentMap.compute (Ljava/lang/Object;Ljava/util/function/BiFunction;)Ljava/lang/Object; (itf)
+@@ -122,7 +122,7 @@
+     MAXLOCALS = 4
+ 
+   // access flags 0x100A
+-  private static synthetic lambda$applied$1(Ljava/util/UUID;JLjava/util/UUID;Lorg/ehcache/clustered/server/state/MessageTracker;)Lorg/ehcache/clustered/server/state/MessageTracker;
++  private static synthetic lambda$applied$5(Ljava/util/UUID;JLjava/util/UUID;Lorg/ehcache/clustered/server/state/MessageTracker;)Lorg/ehcache/clustered/server/state/MessageTracker;
+     ALOAD 4
+     IFNONNULL L0
+     NEW org/ehcache/clustered/server/state/MessageTracker
+@@ -146,7 +146,7 @@
+     MAXLOCALS = 5
+ 
+   // access flags 0x100A
+-  private static synthetic lambda$track$0(Ljava/util/UUID;JLjava/util/UUID;Lorg/ehcache/clustered/server/state/MessageTracker;)Lorg/ehcache/clustered/server/state/MessageTracker;
++  private static synthetic lambda$track$4(Ljava/util/UUID;JLjava/util/UUID;Lorg/ehcache/clustered/server/state/MessageTracker;)Lorg/ehcache/clustered/server/state/MessageTracker;
+     ALOAD 4
+     IFNONNULL L0
+     NEW org/ehcache/clustered/server/state/MessageTracker
+@@ -222,7 +222,7 @@
+       // arguments:
+       (Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;, 
+       // handle kind 0x6 : INVOKESTATIC
+-      org/ehcache/clustered/server/state/ClientMessageTracker.lambda$track$0(Ljava/util/UUID;JLjava/util/UUID;Lorg/ehcache/clustered/server/state/MessageTracker;)Lorg/ehcache/clustered/server/state/MessageTracker;, 
++      org/ehcache/clustered/server/state/ClientMessageTracker.lambda$track$4(Ljava/util/UUID;JLjava/util/UUID;Lorg/ehcache/clustered/server/state/MessageTracker;)Lorg/ehcache/clustered/server/state/MessageTracker;, 
+       (Ljava/util/UUID;Lorg/ehcache/clustered/server/state/MessageTracker;)Lorg/ehcache/clustered/server/state/MessageTracker;
+     ]
+     INVOKEINTERFACE java/util/concurrent/ConcurrentMap.compute (Ljava/lang/Object;Ljava/util/function/BiFunction;)Ljava/lang/Object; (itf)
+diff --git a/org/ehcache/clustered/server/state/EhcacheStateServiceProvider.class.asm b/org/ehcache/clustered/server/state/EhcacheStateServiceProvider.class.asm
+index 80a5b9d..63ef304 100644
+--- a/org/ehcache/clustered/server/state/EhcacheStateServiceProvider.class.asm
++++ b/org/ehcache/clustered/server/state/EhcacheStateServiceProvider.class.asm
+@@ -132,7 +132,9 @@
+     ALOAD 3
+     INVOKEINTERFACE java/util/Collection.size ()I (itf)
+     INVOKEVIRTUAL java/lang/StringBuilder.append (I)Ljava/lang/StringBuilder;
+-    LDC " OffHeapResourcesProvider, this is not supported. There must be only one!"
++    LDC " OffHeapResourcesProvider, this is not supported. "
++    INVOKEVIRTUAL java/lang/StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
++    LDC "There must be only one!"
+     INVOKEVIRTUAL java/lang/StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+     INVOKEVIRTUAL java/lang/StringBuilder.toString ()Ljava/lang/String;
+     INVOKESPECIAL java/lang/UnsupportedOperationException.<init> (Ljava/lang/String;)V
+diff --git a/org/ehcache/clustered/server/state/MessageTracker.class.asm b/org/ehcache/clustered/server/state/MessageTracker.class.asm
+index f2dda5b..fd673f0 100644
+--- a/org/ehcache/clustered/server/state/MessageTracker.class.asm
++++ b/org/ehcache/clustered/server/state/MessageTracker.class.asm
+@@ -58,7 +58,7 @@
+       // arguments:
+       (Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;, 
+       // handle kind 0x6 : INVOKESTATIC
+-      org/ehcache/clustered/server/state/MessageTracker.lambda$applied$1(Ljava/lang/Long;Ljava/lang/Boolean;)Ljava/lang/Boolean;, 
++      org/ehcache/clustered/server/state/MessageTracker.lambda$applied$8(Ljava/lang/Long;Ljava/lang/Boolean;)Ljava/lang/Boolean;, 
+       (Ljava/lang/Long;Ljava/lang/Boolean;)Ljava/lang/Boolean;
+     ]
+     INVOKEVIRTUAL java/util/concurrent/ConcurrentHashMap.computeIfPresent (Ljava/lang/Object;Ljava/util/function/BiFunction;)Ljava/lang/Object;
+@@ -79,7 +79,7 @@
+     MAXLOCALS = 1
+ 
+   // access flags 0x100A
+-  private static synthetic lambda$applied$1(Ljava/lang/Long;Ljava/lang/Boolean;)Ljava/lang/Boolean;
++  private static synthetic lambda$applied$8(Ljava/lang/Long;Ljava/lang/Boolean;)Ljava/lang/Boolean;
+     ICONST_1
+     INVOKESTATIC java/lang/Boolean.valueOf (Z)Ljava/lang/Boolean;
+     DUP
+@@ -89,7 +89,7 @@
+     MAXLOCALS = 2
+ 
+   // access flags 0x100A
+-  private static synthetic lambda$shouldApply$0(Ljava/util/concurrent/atomic/AtomicBoolean;Ljava/lang/Long;Ljava/lang/Boolean;)Ljava/lang/Boolean;
++  private static synthetic lambda$shouldApply$7(Ljava/util/concurrent/atomic/AtomicBoolean;Ljava/lang/Long;Ljava/lang/Boolean;)Ljava/lang/Boolean;
+     ALOAD 2
+     INVOKEVIRTUAL java/lang/Boolean.booleanValue ()Z
+     IFNE L0
+@@ -104,7 +104,7 @@
+     MAXLOCALS = 3
+ 
+   // access flags 0x100A
+-  private static synthetic lambda$updateLowerWaterMark$2(Ljava/util/concurrent/atomic/AtomicBoolean;Ljava/lang/Long;Ljava/lang/Boolean;)Ljava/lang/Boolean;
++  private static synthetic lambda$updateLowerWaterMark$9(Ljava/util/concurrent/atomic/AtomicBoolean;Ljava/lang/Long;Ljava/lang/Boolean;)Ljava/lang/Boolean;
+     ALOAD 2
+     INVOKEVIRTUAL java/lang/Boolean.booleanValue ()Z
+     IFEQ L0
+@@ -179,7 +179,7 @@
+       // arguments:
+       (Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;, 
+       // handle kind 0x6 : INVOKESTATIC
+-      org/ehcache/clustered/server/state/MessageTracker.lambda$shouldApply$0(Ljava/util/concurrent/atomic/AtomicBoolean;Ljava/lang/Long;Ljava/lang/Boolean;)Ljava/lang/Boolean;, 
++      org/ehcache/clustered/server/state/MessageTracker.lambda$shouldApply$7(Ljava/util/concurrent/atomic/AtomicBoolean;Ljava/lang/Long;Ljava/lang/Boolean;)Ljava/lang/Boolean;, 
+       (Ljava/lang/Long;Ljava/lang/Boolean;)Ljava/lang/Boolean;
+     ]
+     INVOKEVIRTUAL java/util/concurrent/ConcurrentHashMap.computeIfPresent (Ljava/lang/Object;Ljava/util/function/BiFunction;)Ljava/lang/Object;
+@@ -278,7 +278,7 @@
+       // arguments:
+       (Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;, 
+       // handle kind 0x6 : INVOKESTATIC
+-      org/ehcache/clustered/server/state/MessageTracker.lambda$updateLowerWaterMark$2(Ljava/util/concurrent/atomic/AtomicBoolean;Ljava/lang/Long;Ljava/lang/Boolean;)Ljava/lang/Boolean;, 
++      org/ehcache/clustered/server/state/MessageTracker.lambda$updateLowerWaterMark$9(Ljava/util/concurrent/atomic/AtomicBoolean;Ljava/lang/Long;Ljava/lang/Boolean;)Ljava/lang/Boolean;, 
+       (Ljava/lang/Long;Ljava/lang/Boolean;)Ljava/lang/Boolean;
+     ]
+     INVOKEVIRTUAL java/util/concurrent/ConcurrentHashMap.computeIfPresent (Ljava/lang/Object;Ljava/util/function/BiFunction;)Ljava/lang/Object;

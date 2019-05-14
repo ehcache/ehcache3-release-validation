@@ -1,0 +1,30 @@
+diff --git a/META-INF/MANIFEST.MF b/META-INF/MANIFEST.MF
+index b7813fb..11219ad 100644
+--- a/META-INF/MANIFEST.MF
++++ b/META-INF/MANIFEST.MF
+@@ -1,7 +1,7 @@
+ Manifest-Version: 1.0
+ Bundle-SymbolicName: org.ehcache.modules.ehcache-107
+ Bundle-ManifestVersion: 2
+-Bnd-LastModified: 1555941261000
++Bnd-LastModified: 1551137332000
+ Import-Package: javax.cache;resolution:=optional,javax.cache.configura
+  tion;resolution:=optional,javax.cache.event;resolution:=optional,java
+  x.cache.expiry;resolution:=optional,javax.cache.integration;resolutio
+@@ -29,5 +29,5 @@
+ Bundle-Name: ehcache-107
+ Private-Package: org.ehcache.jsr107.internal,org.ehcache.jsr107.intern
+  al.tck
+-Created-By: 1.8.0_191 (Oracle Corporation)
++Created-By: 1.8.0_202 (Oracle Corporation)
+ 
+diff --git a/META-INF/maven/org.ehcache.modules/ehcache-107/pom.properties b/META-INF/maven/org.ehcache.modules/ehcache-107/pom.properties
+index 6d49d5b..b85330c 100644
+--- a/META-INF/maven/org.ehcache.modules/ehcache-107/pom.properties
++++ b/META-INF/maven/org.ehcache.modules/ehcache-107/pom.properties
+@@ -1,4 +1,4 @@
+-#Mon Apr 22 09:54:01 EDT 2019
++#Mon Feb 25 15:28:52 PST 2019
+ version=3.7.0
+ groupId=org.ehcache.modules
+ artifactId=ehcache-107

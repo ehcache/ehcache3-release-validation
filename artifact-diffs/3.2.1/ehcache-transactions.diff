@@ -1,0 +1,36 @@
+diff --git a/META-INF/MANIFEST.MF b/META-INF/MANIFEST.MF
+index b2bff60..6464a15 100644
+--- a/META-INF/MANIFEST.MF
++++ b/META-INF/MANIFEST.MF
+@@ -4,10 +4,10 @@
+ Implementation-Title: ehcache-transactions
+ Bundle-License: LICENSE
+ Bundle-SymbolicName: org.ehcache.ehcache-transactions
+-Implementation-Version: 3.2.1 54a10d76ce1f08d840f459d8928219ee8dfa5f40
+-Built-By: cdennis
++Implementation-Version: 3.2.1 09a6179ca360d626e25bbba90f4170771b95a178
++Built-By: jenkins-slave
+ Bundle-ManifestVersion: 2
+-Bnd-LastModified: 1555939439000
++Bnd-LastModified: 1488207179000
+ Bundle-RequiredExecutionEnvironment: JavaSE-1.6
+ Bundle-DocURL: http://ehcache.org
+ Bundle-Vendor: Terracotta Inc., a wholly-owned subsidiary of Software 
+@@ -31,7 +31,7 @@
+  a.txmgr.provider,org.ehcache.xml,org.ehcache.xml.exceptions,org.slf4j
+  ;version="[1.7,2)",org.terracotta.context,org.w3c.dom
+ Require-Capability: osgi.ee;filter:="(&(osgi.ee=JavaSE)(version=1.6))"
+-Built-JDK: 1.8.0_191
++Built-JDK: 1.8.0_121
+ Tool: Bnd-3.2.0.201605172007
+ Export-Package: org.ehcache.transactions.xa;uses:="javax.transaction.x
+  a,org.ehcache.core.internal.resilience",org.ehcache.transactions.xa.c
+@@ -49,6 +49,6 @@
+  nfiguration,org.ehcache.transactions.xa.internal.journal,org.ehcache.
+  transactions.xa.internal.txmgr,org.ehcache.transactions.xa.internal.t
+  xmgr.provider,org.ehcache.transactions.xa.internal.xml
+-Build-Time: 2019-04-22T09:24:00-0400
+-Created-By: 1.8.0_191 (Oracle Corporation)
++Build-Time: 2017-02-27T09:52:59-0500
++Created-By: 1.8.0_121 (Oracle Corporation)
+ 

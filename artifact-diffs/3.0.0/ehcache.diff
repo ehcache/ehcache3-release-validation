@@ -1,0 +1,35 @@
+diff --git a/META-INF/MANIFEST.MF b/META-INF/MANIFEST.MF
+index 42a4bc3..d17b4fd 100644
+--- a/META-INF/MANIFEST.MF
++++ b/META-INF/MANIFEST.MF
+@@ -1,10 +1,10 @@
+ Manifest-Version: 1.0
+ provider: gradle
+ Implementation-Title: ehcache
+-Implementation-Version: 3.0.0 fa5c26221f06679e8e71b96734475ec06ff8329c
+-Built-By: cdennis
+-Built-JDK: 1.6.0_65
+-Build-Time: 2019-04-22T08:03:42-0500
++Implementation-Version: 3.0.0 6973aca181d2b3e0010945a89933f3c99f4460c5
++Built-By: jenkins-slave
++Built-JDK: 1.6.0_45
++Build-Time: 2016-04-15T16:34:46-0700
+ Class-Path: slf4j-api-1.7.7.jar
+ Export-Package: LICENSE,NOTICE,ehcache-107ext.xsd,ehcache-core.xsd,ehc
+  ache-tx-ext.xsd,org.ehcache;uses:="org.ehcache.config,org.ehcache.spi
+@@ -128,13 +128,13 @@
+  fheapstore.storage.portability,org.terracotta.offheapstore.util
+ Tool: Bnd-2.4.0.201411031534
+ Bundle-Name: Ehcache 3
+-Created-By: 1.6.0_65 (Apple Inc.)
++Created-By: 1.6.0_45 (Sun Microsystems Inc.)
+ Bundle-RequiredExecutionEnvironment: JavaSE-1.6
+ Require-Capability: osgi.ee;filter:="(&(osgi.ee=JavaSE)(version=1.6))"
+ Bundle-Vendor: Terracotta Inc., a wholly-owned subsidiary of Software 
+  AG USA, Inc.
+ Bundle-Version: 3.0.0
+-Bnd-LastModified: 1555938222000
++Bnd-LastModified: 1460763286000
+ Bundle-ManifestVersion: 2
+ Bundle-License: LICENSE
+ Bundle-Description: Ehcache is an open-source caching library, complia

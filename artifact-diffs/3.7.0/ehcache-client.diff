@@ -1,0 +1,31 @@
+diff --git a/META-INF/MANIFEST.MF b/META-INF/MANIFEST.MF
+index 6c5fe19..eca997b 100644
+--- a/META-INF/MANIFEST.MF
++++ b/META-INF/MANIFEST.MF
+@@ -73,7 +73,7 @@
+ Bundle-Version: 3.7.0
+ Bundle-Name: ehcache-client
+ Bundle-ManifestVersion: 2
+-Bnd-LastModified: 1555941263000
++Bnd-LastModified: 1551137765000
+ Import-Package: javax.xml.bind,javax.xml.transform,javax.xml.transform
+  .stream,org.ehcache,org.ehcache.clustered.client.config;version="[3.7
+  ,4)",org.ehcache.clustered.client.config.builders;version="[3.7,4)",o
+@@ -106,6 +106,6 @@
+  .connection,org.terracotta.statistics,org.terracotta.statistics.obser
+  ver,org.w3c.dom
+ Require-Capability: osgi.ee;filter:="(&(osgi.ee=JavaSE)(version=1.8))"
+-Created-By: 1.8.0_191 (Oracle Corporation)
++Created-By: 1.8.0_202 (Oracle Corporation)
+ Tool: Bnd-4.0.0.201805111645
+ 
+diff --git a/META-INF/maven/org.ehcache.modules/ehcache-client/pom.properties b/META-INF/maven/org.ehcache.modules/ehcache-client/pom.properties
+index ecc048b..65180a6 100644
+--- a/META-INF/maven/org.ehcache.modules/ehcache-client/pom.properties
++++ b/META-INF/maven/org.ehcache.modules/ehcache-client/pom.properties
+@@ -1,4 +1,4 @@
+-#Mon Apr 22 09:54:01 EDT 2019
++#Mon Feb 25 15:36:05 PST 2019
+ version=3.7.0
+ groupId=org.ehcache.modules
+ artifactId=ehcache-client

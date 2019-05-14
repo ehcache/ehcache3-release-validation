@@ -1,0 +1,31 @@
+diff --git a/META-INF/MANIFEST.MF b/META-INF/MANIFEST.MF
+index 52c6001..466202e 100644
+--- a/META-INF/MANIFEST.MF
++++ b/META-INF/MANIFEST.MF
+@@ -10,7 +10,7 @@
+ Bundle-Version: 3.7.0
+ Bundle-Name: ehcache-xml
+ Bundle-ManifestVersion: 2
+-Bnd-LastModified: 1555941260000
++Bnd-LastModified: 1551137512000
+ Private-Package: org.ehcache.xml.multi,org.ehcache.xml.multi.model,org
+  .ehcache.xml.provider,org.ehcache.xml.service
+ Import-Package: javax.xml.bind,javax.xml.bind.annotation,javax.xml.bin
+@@ -27,6 +27,6 @@
+  org.ehcache.spi.loaderwriter,org.ehcache.spi.service,org.ehcache.xml.
+  exceptions,org.ehcache.xml.model,org.w3c.dom,org.xml.sax
+ Require-Capability: osgi.ee;filter:="(&(osgi.ee=JavaSE)(version=1.8))"
+-Created-By: 1.8.0_191 (Oracle Corporation)
++Created-By: 1.8.0_202 (Oracle Corporation)
+ Tool: Bnd-4.0.0.201805111645
+ 
+diff --git a/META-INF/maven/org.ehcache.modules/ehcache-xml/pom.properties b/META-INF/maven/org.ehcache.modules/ehcache-xml/pom.properties
+index 2f4460c..3b6d1d2 100644
+--- a/META-INF/maven/org.ehcache.modules/ehcache-xml/pom.properties
++++ b/META-INF/maven/org.ehcache.modules/ehcache-xml/pom.properties
+@@ -1,4 +1,4 @@
+-#Mon Apr 22 09:54:01 EDT 2019
++#Mon Feb 25 15:28:55 PST 2019
+ version=3.7.0
+ groupId=org.ehcache.modules
+ artifactId=ehcache-xml

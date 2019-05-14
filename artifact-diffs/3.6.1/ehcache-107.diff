@@ -1,0 +1,27 @@
+diff --git a/META-INF/MANIFEST.MF b/META-INF/MANIFEST.MF
+index 8843002..11f4fd8 100644
+--- a/META-INF/MANIFEST.MF
++++ b/META-INF/MANIFEST.MF
+@@ -1,8 +1,8 @@
+ Manifest-Version: 1.0
+ Implementation-Title: ehcache-107
+-Implementation-Version: 3.6.1 e665fb0f3f0fc0015cd008b1f05017c782a8c424
++Implementation-Version: 3.6.1 9ace921b0ffcecba35c091ed91465e8f133b659e
+ provider: gradle
+-Built-By: cdennis
+-Build-Time: 2019-04-22T09:47:18-0400
+-Built-JDK: 1.8.0_191
++Built-By: jenkins-slave
++Build-Time: 2018-09-21T17:07:45-0700
++Built-JDK: 1.8.0_162
+ 
+diff --git a/META-INF/maven/org.ehcache.modules/ehcache-107/pom.properties b/META-INF/maven/org.ehcache.modules/ehcache-107/pom.properties
+index 3d6d3e0..9d09d07 100644
+--- a/META-INF/maven/org.ehcache.modules/ehcache-107/pom.properties
++++ b/META-INF/maven/org.ehcache.modules/ehcache-107/pom.properties
+@@ -1,4 +1,4 @@
+-#Mon Apr 22 09:47:36 EDT 2019
++#Fri Sep 21 17:07:56 PDT 2018
+ version=3.6.1
+ groupId=org.ehcache.modules
+ artifactId=ehcache-107

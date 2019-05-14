@@ -1,0 +1,21 @@
+diff --git a/META-INF/MANIFEST.MF b/META-INF/MANIFEST.MF
+index 588a5cf..ca322ca 100644
+--- a/META-INF/MANIFEST.MF
++++ b/META-INF/MANIFEST.MF
+@@ -32,7 +32,7 @@
+ Bundle-Version: 3.7.0
+ Bundle-Name: ehcache-transactions
+ Bundle-ManifestVersion: 2
+-Bnd-LastModified: 1555941262000
++Bnd-LastModified: 1551137666000
+ Import-Package: bitronix.tm;resolution:=optional,bitronix.tm.internal;
+  resolution:=optional,bitronix.tm.recovery;resolution:=optional,bitron
+  ix.tm.resource;resolution:=optional,bitronix.tm.resource.common;resol
+@@ -54,6 +54,6 @@
+  c.dom
+ Require-Capability: osgi.ee;filter:="(&(osgi.ee=JavaSE)(version=1.8))"
+ Service-Component: OSGI-INF/*.xml
+-Created-By: 1.8.0_191 (Oracle Corporation)
++Created-By: 1.8.0_202 (Oracle Corporation)
+ Tool: Bnd-4.0.0.201805111645
+ 

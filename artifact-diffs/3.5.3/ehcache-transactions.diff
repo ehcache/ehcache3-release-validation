@@ -1,0 +1,36 @@
+diff --git a/META-INF/MANIFEST.MF b/META-INF/MANIFEST.MF
+index e1afb8c..3d4906d 100644
+--- a/META-INF/MANIFEST.MF
++++ b/META-INF/MANIFEST.MF
+@@ -4,10 +4,10 @@
+ Implementation-Title: ehcache-transactions
+ Bundle-License: LICENSE
+ Bundle-SymbolicName: org.ehcache.ehcache-transactions
+-Implementation-Version: 3.5.3 1652da82c5326c1600791bcf4f73641a97dc8fd4
+-Built-By: cdennis
++Implementation-Version: 3.5.3 87c7d33c8d89a2d3fa99c20851689a68b3b93255
++Built-By: jenkins-slave
+ Bundle-ManifestVersion: 2
+-Bnd-LastModified: 1555940622000
++Bnd-LastModified: 1537564864000
+ Bundle-RequiredExecutionEnvironment: JavaSE-1.8
+ Bundle-DocURL: http://ehcache.org
+ Bundle-Vendor: Terracotta Inc., a wholly-owned subsidiary of Software 
+@@ -28,7 +28,7 @@
+  vice,org.ehcache.xml,org.ehcache.xml.exceptions,org.slf4j;version="[1
+  .7,2)",org.terracotta.context,org.w3c.dom
+ Require-Capability: osgi.ee;filter:="(&(osgi.ee=JavaSE)(version=1.8))"
+-Built-JDK: 1.8.0_191
++Built-JDK: 1.8.0_162
+ Tool: Bnd-3.4.0.201707252008
+ Export-Package: org.ehcache.transactions.xa;uses:="javax.transaction.x
+  a",org.ehcache.transactions.xa.configuration;uses:="org.ehcache.spi.s
+@@ -45,6 +45,6 @@
+  nfiguration,org.ehcache.transactions.xa.internal.journal,org.ehcache.
+  transactions.xa.internal.txmgr,org.ehcache.transactions.xa.internal.t
+  xmgr.provider,org.ehcache.transactions.xa.internal.xml
+-Build-Time: 2019-04-22T09:43:43-0400
+-Created-By: 1.8.0_191 (Oracle Corporation)
++Build-Time: 2018-09-21T14:21:04-0700
++Created-By: 1.8.0_162 (Oracle Corporation)
+ 

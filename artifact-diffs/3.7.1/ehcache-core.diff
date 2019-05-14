@@ -1,0 +1,36 @@
+diff --git a/META-INF/MANIFEST.MF b/META-INF/MANIFEST.MF
+index e296bdc..d743167 100644
+--- a/META-INF/MANIFEST.MF
++++ b/META-INF/MANIFEST.MF
+@@ -1,8 +1,8 @@
+ Manifest-Version: 1.0
+-Bnd-LastModified: 1555941405706
+-Build-Time: 2019-04-22T09:55:59-0400
+-Built-By: cdennis
+-Built-JDK: 1.8.0_191
++Bnd-LastModified: 1554950351080
++Build-Time: 2019-04-10T19:38:58-0700
++Built-By: jenkins-slave
++Built-JDK: 1.8.0_202
+ Bundle-Activator: org.ehcache.core.osgi.EhcacheActivator
+ Bundle-Description: The Core module of Ehcache 3
+ Bundle-DocURL: http://ehcache.org
+@@ -13,7 +13,7 @@
+ Bundle-Vendor: Terracotta Inc., a wholly-owned subsidiary of Software 
+  AG USA, Inc.
+ Bundle-Version: 3.7.1
+-Created-By: 1.8.0_191 (Oracle Corporation)
++Created-By: 1.8.0_202 (Oracle Corporation)
+ Export-Package: org.ehcache.core;uses:="org.ehcache,org.ehcache.config
+  ,org.ehcache.core.events,org.ehcache.core.spi,org.ehcache.core.spi.se
+  rvice,org.ehcache.core.spi.store,org.ehcache.core.statistics,org.ehca
+diff --git a/META-INF/maven/org.ehcache.modules/ehcache-core/pom.properties b/META-INF/maven/org.ehcache.modules/ehcache-core/pom.properties
+index 4a87c5d..f7c9401 100644
+--- a/META-INF/maven/org.ehcache.modules/ehcache-core/pom.properties
++++ b/META-INF/maven/org.ehcache.modules/ehcache-core/pom.properties
+@@ -1,4 +1,4 @@
+-#Mon Apr 22 09:56:33 EDT 2019
++#Wed Apr 10 19:39:10 PDT 2019
+ version=3.7.1
+ groupId=org.ehcache.modules
+ artifactId=ehcache-core

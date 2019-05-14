@@ -1,0 +1,93 @@
+diff --git a/META-INF/MANIFEST.MF b/META-INF/MANIFEST.MF
+index 37d4fff..d3eab5c 100644
+--- a/META-INF/MANIFEST.MF
++++ b/META-INF/MANIFEST.MF
+@@ -1,8 +1,8 @@
+ Manifest-Version: 1.0
+ Bundle-License: LICENSE
+ Bundle-SymbolicName: org.ehcache
+-Built-By: cdennis
+-Bnd-LastModified: 1555941270000
++Built-By: jenkins-slave
++Bnd-LastModified: 1551137603000
+ Bundle-RequiredExecutionEnvironment: JavaSE-1.8
+ Bundle-DocURL: http://ehcache.org
+ Import-Package: javax.cache;resolution:=optional,javax.cache.configura
+@@ -154,7 +154,7 @@
+ Bundle-ManifestVersion: 2
+ Bundle-Vendor: Terracotta Inc., a wholly-owned subsidiary of Software 
+  AG USA, Inc.
+-Built-JDK: 1.8.0_191
++Built-JDK: 1.8.0_202
+ Tool: Bnd-4.0.0.201805111645
+ Bundle-Version: 3.7.0
+ Private-Package: org.ehcache.core.internal.resilience,org.ehcache.core
+@@ -190,6 +190,6 @@
+  offheapstore.storage.allocator,org.terracotta.offheapstore.storage.li
+  stener,org.terracotta.offheapstore.storage.portability,org.terracotta
+  .offheapstore.util
+-Build-Time: 2019-04-22T09:53:42-0400
+-Created-By: 1.8.0_191 (Oracle Corporation)
++Build-Time: 2019-02-25T15:28:36-0800
++Created-By: 1.8.0_202 (Oracle Corporation)
+ 
+diff --git a/META-INF/maven/org.ehcache.modules/ehcache-107/pom.properties b/META-INF/maven/org.ehcache.modules/ehcache-107/pom.properties
+index 6d49d5b..b85330c 100644
+--- a/META-INF/maven/org.ehcache.modules/ehcache-107/pom.properties
++++ b/META-INF/maven/org.ehcache.modules/ehcache-107/pom.properties
+@@ -1,4 +1,4 @@
+-#Mon Apr 22 09:54:01 EDT 2019
++#Mon Feb 25 15:28:52 PST 2019
+ version=3.7.0
+ groupId=org.ehcache.modules
+ artifactId=ehcache-107
+diff --git a/META-INF/maven/org.ehcache.modules/ehcache-api/pom.properties b/META-INF/maven/org.ehcache.modules/ehcache-api/pom.properties
+index b62c178..776489f 100644
+--- a/META-INF/maven/org.ehcache.modules/ehcache-api/pom.properties
++++ b/META-INF/maven/org.ehcache.modules/ehcache-api/pom.properties
+@@ -1,4 +1,4 @@
+-#Mon Apr 22 09:54:03 EDT 2019
++#Mon Feb 25 15:28:48 PST 2019
+ version=3.7.0
+ groupId=org.ehcache.modules
+ artifactId=ehcache-api
+diff --git a/META-INF/maven/org.ehcache.modules/ehcache-core/pom.properties b/META-INF/maven/org.ehcache.modules/ehcache-core/pom.properties
+index e81efb6..789ef78 100644
+--- a/META-INF/maven/org.ehcache.modules/ehcache-core/pom.properties
++++ b/META-INF/maven/org.ehcache.modules/ehcache-core/pom.properties
+@@ -1,4 +1,4 @@
+-#Mon Apr 22 09:54:01 EDT 2019
++#Mon Feb 25 15:28:48 PST 2019
+ version=3.7.0
+ groupId=org.ehcache.modules
+ artifactId=ehcache-core
+diff --git a/META-INF/maven/org.ehcache.modules/ehcache-impl/pom.properties b/META-INF/maven/org.ehcache.modules/ehcache-impl/pom.properties
+index 9459d97..b6a24ce 100644
+--- a/META-INF/maven/org.ehcache.modules/ehcache-impl/pom.properties
++++ b/META-INF/maven/org.ehcache.modules/ehcache-impl/pom.properties
+@@ -1,4 +1,4 @@
+-#Mon Apr 22 09:54:01 EDT 2019
++#Mon Feb 25 15:28:49 PST 2019
+ version=3.7.0
+ groupId=org.ehcache.modules
+ artifactId=ehcache-impl
+diff --git a/META-INF/maven/org.ehcache.modules/ehcache-xml/pom.properties b/META-INF/maven/org.ehcache.modules/ehcache-xml/pom.properties
+index 2f4460c..3b6d1d2 100644
+--- a/META-INF/maven/org.ehcache.modules/ehcache-xml/pom.properties
++++ b/META-INF/maven/org.ehcache.modules/ehcache-xml/pom.properties
+@@ -1,4 +1,4 @@
+-#Mon Apr 22 09:54:01 EDT 2019
++#Mon Feb 25 15:28:55 PST 2019
+ version=3.7.0
+ groupId=org.ehcache.modules
+ artifactId=ehcache-xml
+diff --git a/META-INF/maven/org.ehcache/ehcache/pom.properties b/META-INF/maven/org.ehcache/ehcache/pom.properties
+index 90bbd36..25fb237 100644
+--- a/META-INF/maven/org.ehcache/ehcache/pom.properties
++++ b/META-INF/maven/org.ehcache/ehcache/pom.properties
+@@ -1,4 +1,4 @@
+-#Mon Apr 22 09:54:01 EDT 2019
++#Mon Feb 25 15:33:23 PST 2019
+ version=3.7.0
+ groupId=org.ehcache
+ artifactId=ehcache

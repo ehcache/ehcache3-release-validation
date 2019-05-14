@@ -1,0 +1,96 @@
+diff --git a/META-INF/MANIFEST.MF b/META-INF/MANIFEST.MF
+index eba7235..d3c00a3 100644
+--- a/META-INF/MANIFEST.MF
++++ b/META-INF/MANIFEST.MF
+@@ -4,10 +4,10 @@
+  nt with the JSR-107 standard.
+ Bundle-License: LICENSE
+ Bundle-SymbolicName: org.ehcache.ehcache
+-Implementation-Version: 3.5.0 0c8a723484456bbf3d62e9022a33497c6bd5ab3a
+-Built-By: cdennis
++Implementation-Version: 3.5.0 61be0279e82ff62e370d4a7c83fc3d41e24b9231
++Built-By: jenkins-slave
+ Bundle-ManifestVersion: 2
+-Bnd-LastModified: 1555940326000
++Bnd-LastModified: 1519324787000
+ Bundle-RequiredExecutionEnvironment: JavaSE-1.8
+ Bundle-DocURL: http://ehcache.org
+ Bundle-Vendor: Terracotta Inc., a wholly-owned subsidiary of Software 
+@@ -23,7 +23,7 @@
+  ansform.stream,javax.xml.validation,org.slf4j;version="[1.7,2)",org.w
+  3c.dom,org.xml.sax
+ Require-Capability: osgi.ee;filter:="(&(osgi.ee=JavaSE)(version=1.8))"
+-Built-JDK: 1.8.0_191
++Built-JDK: 1.8.0_162
+ Tool: Bnd-3.4.0.201707252008
+ Export-Package: org.ehcache;uses:="org.ehcache.config,org.ehcache.spi.
+  loaderwriter",org.ehcache.config;uses:="org.ehcache.event,org.ehcache
+@@ -144,6 +144,6 @@
+  terracotta.offheapstore.storage.allocator,org.terracotta.offheapstore
+  .storage.listener,org.terracotta.offheapstore.storage.portability,org
+  .terracotta.offheapstore.util
+-Build-Time: 2019-04-22T09:38:46-0400
+-Created-By: 1.8.0_191 (Oracle Corporation)
++Build-Time: 2018-02-22T10:39:47-0800
++Created-By: 1.8.0_162 (Oracle Corporation)
+ 
+diff --git a/META-INF/maven/org.ehcache.modules/ehcache-107/pom.properties b/META-INF/maven/org.ehcache.modules/ehcache-107/pom.properties
+index 3e0cc4e..a3102d3 100644
+--- a/META-INF/maven/org.ehcache.modules/ehcache-107/pom.properties
++++ b/META-INF/maven/org.ehcache.modules/ehcache-107/pom.properties
+@@ -1,4 +1,4 @@
+-#Mon Apr 22 09:38:24 EDT 2019
++#Thu Feb 22 10:36:50 PST 2018
+ version=3.5.0
+ groupId=org.ehcache.modules
+ artifactId=ehcache-107
+diff --git a/META-INF/maven/org.ehcache.modules/ehcache-api/pom.properties b/META-INF/maven/org.ehcache.modules/ehcache-api/pom.properties
+index ee7b24a..7a585e3 100644
+--- a/META-INF/maven/org.ehcache.modules/ehcache-api/pom.properties
++++ b/META-INF/maven/org.ehcache.modules/ehcache-api/pom.properties
+@@ -1,4 +1,4 @@
+-#Mon Apr 22 09:38:27 EDT 2019
++#Thu Feb 22 10:36:41 PST 2018
+ version=3.5.0
+ groupId=org.ehcache.modules
+ artifactId=ehcache-api
+diff --git a/META-INF/maven/org.ehcache.modules/ehcache-core/pom.properties b/META-INF/maven/org.ehcache.modules/ehcache-core/pom.properties
+index aab7467..d26b71a 100644
+--- a/META-INF/maven/org.ehcache.modules/ehcache-core/pom.properties
++++ b/META-INF/maven/org.ehcache.modules/ehcache-core/pom.properties
+@@ -1,4 +1,4 @@
+-#Mon Apr 22 09:38:24 EDT 2019
++#Thu Feb 22 10:36:43 PST 2018
+ version=3.5.0
+ groupId=org.ehcache.modules
+ artifactId=ehcache-core
+diff --git a/META-INF/maven/org.ehcache.modules/ehcache-impl/pom.properties b/META-INF/maven/org.ehcache.modules/ehcache-impl/pom.properties
+index 1d5c082..3e2161a 100644
+--- a/META-INF/maven/org.ehcache.modules/ehcache-impl/pom.properties
++++ b/META-INF/maven/org.ehcache.modules/ehcache-impl/pom.properties
+@@ -1,4 +1,4 @@
+-#Mon Apr 22 09:38:24 EDT 2019
++#Thu Feb 22 10:36:47 PST 2018
+ version=3.5.0
+ groupId=org.ehcache.modules
+ artifactId=ehcache-impl
+diff --git a/META-INF/maven/org.ehcache.modules/ehcache-xml/pom.properties b/META-INF/maven/org.ehcache.modules/ehcache-xml/pom.properties
+index c7df1fa..99be238 100644
+--- a/META-INF/maven/org.ehcache.modules/ehcache-xml/pom.properties
++++ b/META-INF/maven/org.ehcache.modules/ehcache-xml/pom.properties
+@@ -1,4 +1,4 @@
+-#Mon Apr 22 09:38:24 EDT 2019
++#Thu Feb 22 10:36:49 PST 2018
+ version=3.5.0
+ groupId=org.ehcache.modules
+ artifactId=ehcache-xml
+diff --git a/META-INF/maven/org.ehcache/ehcache/pom.properties b/META-INF/maven/org.ehcache/ehcache/pom.properties
+index fc9ed5e..1a7fe50 100644
+--- a/META-INF/maven/org.ehcache/ehcache/pom.properties
++++ b/META-INF/maven/org.ehcache/ehcache/pom.properties
+@@ -1,4 +1,4 @@
+-#Mon Apr 22 09:38:24 EDT 2019
++#Thu Feb 22 10:39:46 PST 2018
+ version=3.5.0
+ groupId=org.ehcache
+ artifactId=ehcache

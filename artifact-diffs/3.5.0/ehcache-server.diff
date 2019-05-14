@@ -1,0 +1,27 @@
+diff --git a/META-INF/MANIFEST.MF b/META-INF/MANIFEST.MF
+index 579e311..4218927 100644
+--- a/META-INF/MANIFEST.MF
++++ b/META-INF/MANIFEST.MF
+@@ -1,8 +1,8 @@
+ Manifest-Version: 1.0
+ Implementation-Title: ehcache-server
+-Implementation-Version: 3.5.0 0c8a723484456bbf3d62e9022a33497c6bd5ab3a
++Implementation-Version: 3.5.0 61be0279e82ff62e370d4a7c83fc3d41e24b9231
+ provider: gradle
+-Built-By: cdennis
+-Build-Time: 2019-04-22T09:37:54-0400
+-Built-JDK: 1.8.0_191
++Built-By: jenkins-slave
++Build-Time: 2018-02-22T10:36:00-0800
++Built-JDK: 1.8.0_162
+ 
+diff --git a/META-INF/maven/org.ehcache.modules/ehcache-server/pom.properties b/META-INF/maven/org.ehcache.modules/ehcache-server/pom.properties
+index 052c900..ec2cb58 100644
+--- a/META-INF/maven/org.ehcache.modules/ehcache-server/pom.properties
++++ b/META-INF/maven/org.ehcache.modules/ehcache-server/pom.properties
+@@ -1,4 +1,4 @@
+-#Mon Apr 22 09:38:24 EDT 2019
++#Thu Feb 22 10:43:19 PST 2018
+ version=3.5.0
+ groupId=org.ehcache.modules
+ artifactId=ehcache-server

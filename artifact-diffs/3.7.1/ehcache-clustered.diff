@@ -1,0 +1,56 @@
+diff --git a/META-INF/MANIFEST.MF b/META-INF/MANIFEST.MF
+index 88f9068..a78fa1d 100644
+--- a/META-INF/MANIFEST.MF
++++ b/META-INF/MANIFEST.MF
+@@ -1,8 +1,8 @@
+ Manifest-Version: 1.0
+-Bnd-LastModified: 1555941451571
+-Build-Time: 2019-04-22T09:56:15-0400
+-Built-By: cdennis
+-Built-JDK: 1.8.0_191
++Bnd-LastModified: 1554950641543
++Build-Time: 2019-04-10T19:39:00-0700
++Built-By: jenkins-slave
++Built-JDK: 1.8.0_202
+ Bundle-Description: Ehcache 3 Clustered: Defines the client jar and th
+  e kit containing the Terracotta server
+ Bundle-DocURL: http://ehcache.org
+@@ -13,7 +13,7 @@
+ Bundle-Vendor: Terracotta Inc., a wholly-owned subsidiary of Software 
+  AG USA, Inc.
+ Bundle-Version: 3.7.1
+-Created-By: 1.8.0_191 (Oracle Corporation)
++Created-By: 1.8.0_202 (Oracle Corporation)
+ Export-Package: org.ehcache.clustered.client.config;uses:="org.ehcache
+  ,org.ehcache.clustered.client.service,org.ehcache.clustered.common,or
+  g.ehcache.config,org.ehcache.config.builders,org.ehcache.config.units
+diff --git a/META-INF/maven/org.ehcache.modules/ehcache-client/pom.properties b/META-INF/maven/org.ehcache.modules/ehcache-client/pom.properties
+index f03b04f..02b35bc 100644
+--- a/META-INF/maven/org.ehcache.modules/ehcache-client/pom.properties
++++ b/META-INF/maven/org.ehcache.modules/ehcache-client/pom.properties
+@@ -1,4 +1,4 @@
+-#Mon Apr 22 09:56:33 EDT 2019
++#Wed Apr 10 19:43:35 PDT 2019
+ version=3.7.1
+ groupId=org.ehcache.modules
+ artifactId=ehcache-client
+diff --git a/META-INF/maven/org.ehcache.modules/ehcache-common/pom.properties b/META-INF/maven/org.ehcache.modules/ehcache-common/pom.properties
+index e358fe2..e7a8fbc 100644
+--- a/META-INF/maven/org.ehcache.modules/ehcache-common/pom.properties
++++ b/META-INF/maven/org.ehcache.modules/ehcache-common/pom.properties
+@@ -1,4 +1,4 @@
+-#Mon Apr 22 09:56:33 EDT 2019
++#Wed Apr 10 19:43:41 PDT 2019
+ version=3.7.1
+ groupId=org.ehcache.modules
+ artifactId=ehcache-common
+diff --git a/META-INF/maven/org.ehcache/ehcache-clustered/pom.properties b/META-INF/maven/org.ehcache/ehcache-clustered/pom.properties
+index ed7807b..d2dc6d3 100644
+--- a/META-INF/maven/org.ehcache/ehcache-clustered/pom.properties
++++ b/META-INF/maven/org.ehcache/ehcache-clustered/pom.properties
+@@ -1,4 +1,4 @@
+-#Mon Apr 22 09:56:33 EDT 2019
++#Wed Apr 10 19:44:00 PDT 2019
+ version=3.7.1
+ groupId=org.ehcache
+ artifactId=ehcache-clustered
